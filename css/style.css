@@ -594,11 +594,11 @@ button:focus {
         grid-template-columns: 1fr;
         margin: 0%;
     } 
-
+/* 
     .skills_coding {
         width: 400px;
         justify-self: center;
-    }
+    } */
     .categories {
         flex-direction: column;
         
