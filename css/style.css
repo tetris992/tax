@@ -584,16 +584,15 @@ button:focus {
         align-items: center;
     }
     .major {
-        max-width: 350px;
-        min-width: 250px;
+        max-width: 35rem;
+        min-width: 400px;
     }
     .job {
         justify-content: center;
     }
     .skills {
         grid-template-columns: 1fr;
-        margin: 0%;
-        min-width: 400px;
+        margin: 5%;
     } 
     .categories {
         flex-direction: column;
