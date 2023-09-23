@@ -592,9 +592,11 @@ button:focus {
     }
     .skills {
         grid-template-columns: 1fr;
-    }
+        margin: 0%;
+    } 
     .categories {
         flex-direction: column;
+        
     }
     .category {
         width: 100%;
