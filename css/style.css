@@ -527,7 +527,7 @@ button:focus {
 }
 
 .contact_link {
-    color: var(--color-accent-variant);
+    color: rgb(207, 181, 113);
     transition: color 250ms ease-in;
 }
 
