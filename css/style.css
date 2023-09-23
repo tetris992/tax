@@ -120,6 +120,14 @@ button:focus {
     border-radius: 50%;
 } */
 
+.icon-transition {
+    color: coral;
+    transition: color 5s; /* 색깔이 5초 동안 트랜지션됩니다 */
+}
+
+.icon-transition:hover {
+    color: greenyellow; /* 아이콘 위에 마우스를 올렸을 때의 색깔 */
+}
 
 .header_logo_title a {
     font-size: 1.7rem;
