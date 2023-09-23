@@ -585,13 +585,15 @@ button:focus {
         min-width: 350px;
         /* margin: 2rem; */
     }
+
     .job {
         justify-content: center;
     }
+
     .skills {
         grid-template-columns: 1fr;
+        justify-content: center;
         align-items: center;
-
         max-width: auto;
     } 
     
@@ -599,9 +601,11 @@ button:focus {
         flex-direction: column;
         
     }
+
     .category {
         width: 100%;
     }
+
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -610,6 +614,7 @@ button:focus {
         font-size: 1.2rem;
         margin-bottom: 0.2rem;
     }
+
     .home_avatar:hover {
         width: 250px;
         height: 250px;
@@ -618,7 +623,6 @@ button:focus {
         scale: 0.99;
         border-radius: 50%;
         border: 145px double greenyellow;
- 
         transition: none; /* 트랜지션 제거 */
         transform: none; /* transform 제거 */
     }
