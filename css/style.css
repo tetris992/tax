@@ -123,7 +123,7 @@ button:focus {
 }
 
 .icon-transition {
-    color: rgb(207, 181, 113);
+    color: slategrey;
     transition: color 5s; /* 색깔이 5초 동안 트랜지션됩니다 */
 }
 
