@@ -394,7 +394,6 @@ button:focus {
 }
 .project {
     position: relative;
-
     border-radius: 8px;
     overflow: hidden;
 }
@@ -591,8 +590,9 @@ button:focus {
     }
     .skills {
         grid-template-columns: 1fr;
+        align-items: center;
+
         max-width: auto;
-        min-width: auto;
     } 
     
     .categories {
