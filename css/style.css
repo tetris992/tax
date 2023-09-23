@@ -555,6 +555,10 @@ button:focus {
         align-items: start;
     }
 
+    .header_logo_img {
+        filter: contrast(1.5); 
+    }
+
     .header_menu {
         display: none;
         flex-direction: column;
