@@ -585,7 +585,7 @@ button:focus {
     }
     .major {
         max-width: 35rem;
-        min-width: 400px;
+        min-width: 300px;
     }
     .job {
         justify-content: center;
@@ -593,6 +593,7 @@ button:focus {
     .skills {
         grid-template-columns: 1fr;
         margin: 0%;
+        min-width: 600px;
     } 
     .categories {
         flex-direction: column;
