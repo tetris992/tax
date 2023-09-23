@@ -114,11 +114,11 @@ button:focus {
     gap: 8px;
 }
 
-/* .header_logo_img {
+.header_logo_img {
     width: 36px;
     height: 36px;
-    border-radius: 50%;
-} */
+    border-radius: 20%;
+}
 
 .icon-transition {
     color: rgb(207, 181, 113);
