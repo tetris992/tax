@@ -531,7 +531,7 @@ button:focus {
         padding: 4rem 2rem;
     }
     .title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .description {
         font-size: 1rem;
@@ -575,6 +575,9 @@ button:focus {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
+    .home_description {
+        font-size: 1.2rem;
+    }
 
     .majors {
         flex-direction: column;
@@ -601,7 +604,7 @@ button:focus {
     }
 
     .home_title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 0.2rem;
     }
     .home_avatar:hover {
