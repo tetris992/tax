@@ -594,13 +594,7 @@ button:focus {
         grid-template-columns: 1fr;
         margin: 0%;
         min-width: 400px;
-
     } 
-/* 
-    .skills_coding {
-        width: 400px;
-        justify-self: center;
-    } */
     .categories {
         flex-direction: column;
         
