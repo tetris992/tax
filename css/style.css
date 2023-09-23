@@ -125,11 +125,6 @@ button:focus {
     color: rgb(207, 181, 113);
 }
 
-.spaced-icon {
-    margin-left: 10px; 
-}
-
-
 .header_menu {
     display: flex;
     gap: 4px;
