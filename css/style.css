@@ -596,7 +596,7 @@ button:focus {
     } 
 
     .skills_coding {
-        width: auto;
+        width: 400px;
     }
     .categories {
         flex-direction: column;
