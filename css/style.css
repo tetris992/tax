@@ -118,6 +118,7 @@ button:focus {
     width: 55px;
     height: 55px;
     border-radius: 20%;
+    background-color: var(--color-black);
     filter: brightness(1.5);
     box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
 }
