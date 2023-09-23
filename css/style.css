@@ -248,7 +248,7 @@ button:focus {
 .major_icon {
     font-size:  4rem;
     margin: 1rem 0;
-    color: var(--color-accent);
+    color: goldenrod;
     transition: color 150ms ease-out, transform 850ms ease-in-out;
 }
 
