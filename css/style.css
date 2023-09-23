@@ -654,7 +654,7 @@ button:focus {
     .arrow_up {
         height: 2rem;
         width: 2rem;
-        bottom: 1.5rem;
+        bottom: 3.5rem;
         right: 0.5rem;
         font-size: 1.5rem;
    
@@ -666,7 +666,7 @@ button:focus {
     }
 
     #contact {
-        font-size: 60%;
+        font-size: 70%;
     }
 
     
