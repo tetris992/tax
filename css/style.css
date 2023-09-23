@@ -584,7 +584,7 @@ button:focus {
         align-items: center;
     }
     .major {
-        max-width: auto;
+        max-width: 350px;
         min-width: auto;
     }
     .job {
