@@ -133,6 +133,7 @@ button:focus {
     font-size: 1.7rem;
     color: rgb(207, 181, 113);
 }
+
 .smaller-icon {
     font-size: 50%; /* 아이콘의 사이즈를 50% 작게 합니다 */
 }
