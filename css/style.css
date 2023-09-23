@@ -120,9 +120,13 @@ button:focus {
     border-radius: 50%;
 } */
 
+
 .header_logo_title a {
     font-size: 1.7rem;
     color: rgb(207, 181, 113);
+}
+.header_logo_title:hover i {
+    color: greenyellow;
 }
 
 .header_menu {
