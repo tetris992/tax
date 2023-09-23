@@ -585,7 +585,7 @@ button:focus {
     }
     .major {
         max-width: 25rem;
-        min-width: 400px;
+        min-width: 300px;
     }
     .job {
         justify-content: center;
