@@ -292,19 +292,17 @@ button:focus {
 .skills_coding {
     grid-row: span 2;
     padding: 1rem;
-    background-color: var(--color-primary);
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 .skills_tools {
     padding: 1rem;
-    /* padding-bottom: 3rem; */
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 .skills_etc {
     padding: 1rem;
-    /* background-color: var(--color-primary);
-        filter: brightness(150%); */
-
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 /* bar */
@@ -593,9 +591,8 @@ button:focus {
     }
     .skills {
         grid-template-columns: 1fr;
-        margin: 2rem 0px 0px 0px;
         max-width: auto;
-        min-width: 250px;
+        min-width: auto;
     } 
     
     .categories {
