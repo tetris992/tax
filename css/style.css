@@ -593,6 +593,7 @@ button:focus {
     .skills {
         grid-template-columns: 1fr;
         margin: 5%;
+        justify-content: center;
     } 
     .categories {
         flex-direction: column;
