@@ -114,11 +114,11 @@ button:focus {
     gap: 8px;
 }
 
-.header_logo_img {
+/* .header_logo_img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-}
+} */
 
 .header_logo_title a {
     font-size: 1.7rem;
