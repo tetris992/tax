@@ -566,7 +566,7 @@ button:focus {
     }
     .header_logo_title a {
         font-size: 1.4rem;
-        color: slategrey;
+        color: rgb(12, 88, 9);
         box-shadow: 0 20px 50px rgba(240, 46, 170, 0.7);
     }
 
