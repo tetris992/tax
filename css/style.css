@@ -564,7 +564,7 @@ button:focus {
         filter: contrast(1.7); 
         box-shadow: 0 20px 50px rgba(240, 46, 170, 0.7);
     }
-    .header_logo_title {
+    .header_logo_title a {
         font-size: 30%;
     }
 
