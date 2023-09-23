@@ -116,9 +116,10 @@ button:focus {
 
 .header_logo_img {
     width: 40px;
-    height: 36px;
+    height: 40px;
     border-radius: 20%;
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    box-shadow: 0 20px 50px rgba(107, 212, 133, 0.7);
 }
 
 .icon-transition {
