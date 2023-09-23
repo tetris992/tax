@@ -302,8 +302,8 @@ button:focus {
 
 .skills_etc {
     padding: 1rem;
-    background-color: var(--color-primary);
-        filter: brightness(150%);
+    /* background-color: var(--color-primary);
+        filter: brightness(150%); */
 
 }
 
@@ -593,10 +593,11 @@ button:focus {
     }
     .skills {
         grid-template-columns: 1fr;
+        margin: 2rem 0px 0px 0px;
         max-width: auto;
         min-width: 250px;
     } 
-
+    
     .categories {
         flex-direction: column;
         
