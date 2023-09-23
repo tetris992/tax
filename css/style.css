@@ -659,4 +659,9 @@ button:focus {
         font-size: 1.5rem;
    
     }
+    .contact_link {
+        color: rgb(207, 181, 113);
+        transition: color 250ms ease-in;
+    }
+    
 }
