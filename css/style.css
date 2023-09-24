@@ -261,7 +261,7 @@ button:focus {
 }
 
 .major:hover .major_icon {
-    transform: rotate(-30deg) scale(1.2);
+    transform: rotate(-10deg) scale(1.2);
     color: var(--color-accent-variant);
 }
 
