@@ -179,14 +179,26 @@ button:focus {
 }
 
 #home {
+    position: relative;
     background-color: rgb(53, 139, 210);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    overflow: hidden;
 }
 
-/* .home_avatar {
+#home video {
+    position: absolute; /* 동영상을 절대위치로 설정합니다. */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;  /* 다른 요소가 동영상 위에 오도록 설정합니다. */
+}
+
+.home_avatar {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -195,38 +207,7 @@ button:focus {
     border-radius: 50%;
     border: 145px double greenyellow;
     transition: 200ms cubic-bezier(0,0,.99,.99);
-} */
-.section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* 높이를 화면의 높이만큼 설정 */
-    overflow: hidden;
 }
-
-.home-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding: 0;  /* 원래 padding 값을 무시하고 새로운 값을 적용 */
-    overflow: hidden;
-}
-
-.home_container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
 
 .home_avatar:hover {
     border: 1px dotted var(--color-accent);
