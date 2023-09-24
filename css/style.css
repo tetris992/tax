@@ -193,8 +193,10 @@ button:focus {
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    max-height: 450px;
+    max-width: var(--size-max-width);
+    width: 100%; 
+    display: block;
+    margin: 0 auto; /* 중앙 정렬 */
     z-index: -1;  /* 다른 요소가 동영상 위에 오도록 설정합니다. */
 }
 
