@@ -614,6 +614,11 @@ button:focus {
         background-color: var(--color-primary);
         padding-bottom: 3rem;
     }
+    
+    #title_video {
+        display: none;
+    }
+
     .home_title {
         font-size: 0.7rem;
         margin-bottom: 0.5rem;
