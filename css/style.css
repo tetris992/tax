@@ -189,21 +189,22 @@ button:focus {
 }
 
 #home video {
-    position: absolute; /* 동영상을 절대위치로 설정합니다. */
-    top: 50%; 
+    position: absolute; 
+    top: 0;  /* 상단을 맨 위로 설정 */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);  /* 세로 위치는 변경하지 않고 가로 위치만 조정 */
     max-width: var(--size-max-width);
     width: 100%; 
-    display: block;
-    margin: 0 auto; /* 중앙 정렬 */
-    z-index: -1;  /* 다른 요소가 동영상 위에 오도록 설정합니다. */
+    height: 490px; /* 높이를 490px로 고정 */
+    z-index: -1;  
 }
+
 
 .home_avatar {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    align-items: center;
     opacity: 0.5;
     scale: 0.99;
     border-radius: 50%;
