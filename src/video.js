@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const titleVideo = document.getElementById("title_video");
+    titleVideo.volume = 0.5;
 
     function playOrPauseVideo() {
         if (window.innerWidth >= 769) {
@@ -18,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             titleVideo.pause();
         }
     });
-
     // 창 크기 변경 시 동영상 재생/일시정지 처리
     window.addEventListener('resize', playOrPauseVideo);
 });
