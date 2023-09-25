@@ -679,6 +679,10 @@ button:focus {
         transform: none; /* transform 제거 */
     }
     
+    .home_avatar:hover {
+        filter: brightness(1.7);
+    }
+    
 
     .testimonial {
         flex-direction: column;
