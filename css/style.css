@@ -176,6 +176,7 @@ button:focus {
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    height: 100vh;
 }
 
 #title_video {
@@ -554,8 +555,11 @@ button:focus {
 }
 
 @keyframes shrinkHeight {
+    from {
+        height: 100vh; /* 초기 높이 */
+    }
     to {
-        height: 30%; /* 높이를 30%로 줄입니다 */
+        height: 30vh; /* 최종 높이 */
     }
 }
 
