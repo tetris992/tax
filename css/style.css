@@ -562,9 +562,9 @@ button:focus {
         height: 30%; /* 최종 높이 */
     }
 }
-
-#home.shrink {
-    animation: shrinkHeight 3s forwards; /* 3초 동안 애니메이션을 실행 */
+#home.shrink .home_container {
+    animation: fadeOutContent 2.5s forwards;
+    animation: shrinkHeight 3s forwards;
 }
 
 @media screen and (max-width: 768px) {
