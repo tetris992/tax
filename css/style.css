@@ -607,6 +607,7 @@ button:focus {
     .header_menu_toggle {
         display: block;
         color: var(--color-text);
+        background-color: transparent;
     }
 
     #home {
