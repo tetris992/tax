@@ -638,10 +638,10 @@ button:focus {
         background-color: transparent;
         color: var(--color-text);
         padding: 1rem 0%;
-        margin: 1rem 1rem;
+        margin: 4rem 1rem 1rem 1rem;
+        z-index: 1;
         /* padding-top: 7rem; */
         text-align: center;
-        height: 100vh;
         overflow: hidden;
     }
 
