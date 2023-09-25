@@ -683,9 +683,9 @@ button:focus {
     
     .home_avatar:hover {
         filter: brightness(1.7);
-        opacity: 0.9;
-        scale: 1.2;
-        transform: scale(1.2) rotate(45deg);
+        opacity: 0.8;
+        scale: 1;
+        transform: scale(1) rotate(45deg);
         border-color: coral;
         transition: all 400ms ease-in;
     }
