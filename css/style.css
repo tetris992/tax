@@ -180,7 +180,6 @@ button:focus {
     /* overflow: hidden; */
 }
 
-
 #title_video {
     position: relative; 
     /* top: 7rem;  */
@@ -197,8 +196,8 @@ button:focus {
 }
 
 .home_container {
-    position: absolute;  /* .home_container를 절대 위치로 설정하여 #home 위에 배치합니다. */
-    top: 400px;             /* 상단에 붙입니다. */
+    position: relative;  /* .home_container를 절대 위치로 설정하여 #home 위에 배치합니다. */
+    bottom: 2rem;             /* 상단에 붙입니다. */
     left: 0;            /* 왼쪽에 붙입니다. */
     right: 0;           /* 오른쪽에 붙입니다. */
     z-index: 10;        /* 비디오 위에 표시되게 합니다. */
@@ -573,11 +572,8 @@ button:focus {
         height: 10vh; /* 최종 높이 */
     }
 }
-#home.shrink .home_container {
-    animation: fadeOutContent 2.5s forwards;
-}
-
 #home.shrink {
+    animation: fadeOutContent 2.5s forwards;
     animation: shrinkHeight 3s forwards; /* 3초 동안 애니메이션을 실행 */
 }
 
