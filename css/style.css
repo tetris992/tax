@@ -134,7 +134,7 @@ button:focus {
 
 .header_menu {
     display: flex;
-    gap: 4px;
+    gap: 3px;
 }
 
 .header_menu_item {
