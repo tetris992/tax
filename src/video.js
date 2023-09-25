@@ -19,14 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     titleVideo.addEventListener('timeupdate', function() {
         if (titleVideo.currentTime >= 6.5) {
             titleVideo.pause();
+            homeSection.classList.add('shrink');
         }
     });
-
-    // 동영상이 종료되면 CSS 클래스를 추가하여 애니메이션을 적용
-    titleVideo.addEventListener('ended', function() {
-        homeSection.classList.add('shrink');
-    });
-
     // 창 크기 변경 시 동영상 재생/일시정지 처리
     window.addEventListener('resize', playOrPauseVideo);
 });
