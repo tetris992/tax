@@ -177,7 +177,7 @@ button:focus {
     padding-top: 7rem;
     text-align: center;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #title_video {
