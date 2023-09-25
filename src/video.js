@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 비디오 재생 시간이 5초에 도달하면 멈춤
     titleVideo.addEventListener('timeupdate', function() {
-        if (titleVideo.currentTime >= 5) {
+        if (titleVideo.currentTime >= 4) {
             titleVideo.pause();
         }
     });
