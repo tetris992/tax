@@ -671,16 +671,20 @@ button:focus {
         width: 250px;
         height: 250px;
         object-fit: cover;
-        opacity: 0.3;
-        scale: 0.99;
+        opacity: 0.5;
+        scale: 0.9;
         border-radius: 50%;
         border: 145px double greenyellow;
-        transition: none; /* 트랜지션 제거 */
-        transform: none; /* transform 제거 */
+        transition: all 200ms ease-in;  
+        transform: scale(0.8);
+
     }
     
     .home_avatar:hover {
         filter: brightness(1.7);
+        opacity: 0.9;
+        border-color: coral;
+        transition: all 200ms ease-in;
     }
     
 
