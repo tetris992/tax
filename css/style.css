@@ -570,7 +570,7 @@ button:focus {
         height: 100vh; /* 초기 높이 */
     }
     to {
-        height: 50vh; /* 최종 높이 */
+        height: 10vh; /* 최종 높이 */
     }
 }
 #home.shrink .home_container {
