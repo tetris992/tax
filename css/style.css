@@ -198,7 +198,7 @@ button:focus {
 
 .home_container {
     position: relative;  /* .home_container를 절대 위치로 설정하여 #home 위에 배치합니다. */
-    display: inline-block;
+    display: none;
     bottom: 2rem;             /* 상단에 붙입니다. */
     z-index: -1;        /* 비디오 위에 표시되게 합니다. */
     text-align: center; /* 콘텐츠를 중앙 정렬합니다. */
