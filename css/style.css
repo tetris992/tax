@@ -634,8 +634,15 @@ button:focus {
     }
 
     #home {
-        background-color: var(--color-primary);
-        padding-bottom: 3rem;
+        position: relative;
+        background-color: transparent;
+        color: var(--color-text);
+        padding: 1rem 0%;
+        margin: 1rem 1rem;
+        /* padding-top: 7rem; */
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
     }
 
     #title_video {
