@@ -1,17 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     const titleVideo = document.getElementById("title_video");
 
-    function checkVideoPlayback() {
+    // 너비가 1200px 이상일 때만 동영상이 재생되도록
+    if (window.innerWidth >= 1200) {
+        titleVideo.play();
+    } else {
+        titleVideo.pause();
+    }
+
+    // 비디오 재생 시간이 5초에 도달하면 멈춤
+    titleVideo.addEventListener('timeupdate', function() {
+        if (titleVideo.currentTime >= 5) {
+            titleVideo.pause();
+        }
+    });
+
+    // 창 크기 변경 시 동영상 재생/일시정지 처리
+    window.addEventListener('resize', function() {
         if (window.innerWidth >= 1200) {
             titleVideo.play();
         } else {
             titleVideo.pause();
         }
-    }
-
-    // 페이지가 로드될 때 동영상 재생 상태를 확인합니다.
-    checkVideoPlayback();
-
-    // 화면 크기가 변경될 때마다 함수를 호출합니다.
-    window.addEventListener("resize", checkVideoPlayback);
+    });
 });
