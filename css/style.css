@@ -173,8 +173,8 @@ button:focus {
     position: relative;
     background-color: rgb(1, 1, 2);
     color: var(--color-text);
-    padding: 1rem 1rem;
-    margin: 0rem 1rem;
+    padding: 1rem 0%;
+    margin: -2.5rem 1rem;
     /* padding-top: 7rem; */
     text-align: center;
     height: 100vh;
