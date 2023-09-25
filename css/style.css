@@ -553,6 +553,15 @@ button:focus {
     color: var(--color-accent);
 }
 
+@keyframes shrinkHeight {
+    to {
+        height: 30%; /* 높이를 30%로 줄입니다 */
+    }
+}
+
+#home.shrink {
+    animation: shrinkHeight 3s forwards; /* 3초 동안 애니메이션을 실행 */
+}
 
 @media screen and (max-width: 768px) {
     .section {
