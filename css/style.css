@@ -616,6 +616,7 @@ button:focus {
 
     #title_video {
         display: none;
+        opacity: 0;
     }
 
     .home_title {
