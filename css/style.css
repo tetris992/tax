@@ -192,6 +192,7 @@ button:focus {
     margin-bottom: 2rem;
     z-index: 1;  
     border-radius: 5%;
+    overflow: hidden;
 }
 
 .home_avatar {
