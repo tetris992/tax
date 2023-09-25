@@ -192,7 +192,6 @@ button:focus {
     margin-bottom: 2rem;
     z-index: 1;  
     border-radius: 5%;
-    overflow: hidden;
 }
 
 .home_avatar {
@@ -560,12 +559,15 @@ button:focus {
         height: 100vh; /* 초기 높이 */
     }
     to {
-        height: 35vh; /* 최종 높이 */
+        height: 30vh; /* 최종 높이 */
     }
 }
 #home.shrink .home_container {
     animation: fadeOutContent 2.5s forwards;
-    animation: shrinkHeight 3s forwards;
+}
+
+#home.shrink {
+    animation: shrinkHeight 3s forwards; /* 3초 동안 애니메이션을 실행 */
 }
 
 @media screen and (max-width: 768px) {
