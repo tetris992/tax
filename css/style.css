@@ -39,7 +39,7 @@ ul {
 }
 strong {
     color: var(--color-accent);
-    padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 ul {
