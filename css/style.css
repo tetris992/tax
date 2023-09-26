@@ -138,7 +138,7 @@ button:focus {
 
 .header_menu {
     display: flex;
-    gap: 3px;
+    gap: 0px;
 }
 
 .header_menu_item {
@@ -165,7 +165,6 @@ button:focus {
 .header_menu_item.active {
     color: var(--color-accent); 
     border: 1px dotted var(--color-accent);
-    /* 활성 상태일 때의 색상을 변경합니다. 원하시는 다른 스타일로 수정할 수 있습니다. */
 }
 
 
@@ -178,22 +177,21 @@ button:focus {
     background-color: rgb(1, 1, 2);
     color: var(--color-text);
     padding: 1rem 0%;
-    margin: 1rem 1rem;
-    /* padding-top: 7rem; */
-    text-align: center;
-    height: 100vh;
+    margin: 1rem 0rem;
     overflow: hidden;
+    text-align: center;
+    height: auto;
+    /* overflow: hidden; */
 }
 
 #title_video {
-    position: relative; 
+    position: absolute;
+    object-fit: cover;
     padding: 0 0;
-    left: auto;
-    right: auto;
-    /* left: 50%; */
-    /* max-width: var(--size-max-width); */
+    left: 1px;
+    top: 10px;
     width: 100%; 
-    height: 100%; /* 높이를 490px로 고정 */
+    height: auto; 
     overflow: hidden;
     margin-bottom: -1rem;
     z-index: 1;  
@@ -201,36 +199,55 @@ button:focus {
 }
 
 .home_container {
-    position: relative;  /* .home_container를 절대 위치로 설정하여 #home 위에 배치합니다. */
-    display: none;
-    bottom: 2rem;             /* 상단에 붙입니다. */
-    z-index: -1;        /* 비디오 위에 표시되게 합니다. */
-    text-align: center; /* 콘텐츠를 중앙 정렬합니다. */
+    position: relative; 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0rem;  
+    height: 400px;           
+    z-index: 1;       
+    text-align: center; 
 }
 
 .home_avatar {
-    display: none;
-    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    /* display: block; */
+    left: 50%;             /* 화면의 중앙으로 이동 */
+    top: 50%;              /* 화면의 중앙으로 이동 */
+    transform: translate(-50%, -50%);
     width: 250px;
     height: 250px;
     object-fit: cover;
     opacity: 0.5;
+    transition: opacity 5s;
     scale: 0.99;
     border-radius: 50%;
     border: 145px double greenyellow;
     transition: 200ms cubic-bezier(0,0,.99,.99);
-    /* z-index: -2;  */
+    z-index: -2;  
 }
-/* .home_avatar:hover {
+.home_avatar.active {
     border: 1px dotted var(--color-accent);
-    opacity: 1;
-    transition: border 700ms ease-out, opacity 3s ease-out;
-    scale: 0.99;
-} */
+    opacity: 0;
+    transition: border 5s ease-out, opacity 22s ease-out;
+    scale: 1;
+}
+
+.fadeIn {
+    opacity: 1 !important;
+}
+
+.home_title, .home_title--strong, .home_description, .home_contact {
+    opacity: 0; /* 기본적으로 투명 */
+    transition: opacity 7s; /* 2.5초 동안 서서히 보여지도록 설정 */
+}
 
 .home_title {
+    margin-top: 130px;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -568,22 +585,33 @@ button:focus {
     color: var(--color-accent);
 }
 
-@keyframes shrinkHeight {
+
+@keyframes fadeOutVideo {
     from {
-        height: 100vh; /* 초기 높이 */
+        opacity: 1;
     }
     to {
-        height: 1vh; /* 최종 높이 */
+        opacity: 0;
+    }
+}
+
+
+/* @keyframes shrinkHeight {
+    from {
+        height: 100vh; 
+    }
+    to {
+        height: 0vh; 
     }
 }
 #home.shrink {
     animation: fadeOutContent 2.5s forwards;
-    animation: shrinkHeight 3s forwards; /* 3초 동안 애니메이션을 실행 */
-}
+    animation: shrinkHeight 3s forwards; 
+} */
 
 @media screen and (max-width: 768px) {
     .section {
-        padding: 4rem 2rem;
+        padding: 3rem 2rem;
     }
     .title {
         font-size: 1.2rem;
@@ -634,26 +662,75 @@ button:focus {
     .header_menu_toggle {
         display: block;
         color: var(--color-text);
-        background-color: transparent;
     }
 
     #home {
         position: relative;
-        background-color: transparent;
+        background-color: rgb(1, 1, 2);
         color: var(--color-text);
         padding: 1rem 0%;
-        margin: 4rem 1rem 1rem 1rem;
-        z-index: 1;
+        margin: 1rem 0rem;
         /* padding-top: 7rem; */
         text-align: center;
+        height: auto;
         overflow: hidden;
     }
 
-    #title_video {
-        display: none;
-        opacity: 0;
+
+    /* #title_video {
+        position: absolute;
+        object-fit: cover;
+        padding: 0 0;
+        left: 1px;
+        top: 10px;
+        width: 100%; 
+        height: auto; 
+        overflow: hidden;
+        margin-bottom: -1rem;
+        z-index: 1;  
+        border-radius: 5%;
+    } */
+    
+    .home_container {
+        position: relative; 
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin: 0rem;  
+        height: 330px;           
+        z-index: 1;       
+        text-align: center; 
     }
 
+    .home_avatar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+        left: 50%;           
+        top: 50%;            
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        opacity: 0.5;
+        transition: opacity 5s;
+        scale: 0.99;
+        border-radius: 50%;
+        border: 145px double slategrey;
+        /* transition: 500ms cubic-bezier(0,0,.99,.99); */
+        z-index: -2;  
+    }
+    .home_avatar.active {
+        border: 1px dotted var(--color-accent);
+        opacity: 0;
+        transition: border 11s ease-out, opacity 30s ease-out;
+        scale: 1;
+    }
+    
+    
     .home_title {
         font-size: 0.7rem;
         margin-bottom: 0.5rem;
@@ -695,30 +772,6 @@ button:focus {
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .home_avatar {
-        display: block;
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        opacity: 0.5;
-        scale: 0.9;
-        border-radius: 50%;
-        border: 145px double greenyellow;
-        transition: all 200ms ease-in;  
-        transform: scale(0.8);
-
-    }
-    
-    .home_avatar:hover {
-        filter: brightness(1.7);
-        opacity: 0.8;
-        scale: 1;
-        transform: scale(1) rotate(45deg);
-        border-color: coral;
-        transition: all 400ms ease-in;
-    }
-    
 
     .testimonial {
         flex-direction: column;
