@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeDescription = document.querySelector(".home_description");
     const homeContact = document.querySelector(".home_contact");
     const homeAvatar = document.querySelector(".home_avatar");
+    const homeSection = document.getElementById("home"); 
+    // const headercolor = document.getElementById(".header");
 
-    
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
     // 비디오 재생 시간이 6.5초에 도달하면 멈춤
@@ -14,27 +15,30 @@ document.addEventListener('DOMContentLoaded', function() {
         if (titleVideo.currentTime >= 6.5) {
             titleVideo.pause();
             
-            // 비디오의 투명도를 서서히 0으로 만드는 애니메이션 적용
             titleVideo.style.transition = 'opacity 1s ease-out';
             titleVideo.style.opacity = 0;
 
-            // 글자들이 서서히 보이도록 .fadeIn 클래스 추가
             homeTitle.classList.add('fadeIn');
             homeTitleStrong.classList.add('fadeIn');
             homeDescription.classList.add('fadeIn');
             homeContact.classList.add('fadeIn');
-            // homeAvatar.classList.add('fadeIn');
+            // headercolor.classList.add("header_color_changed")
 
-            // 애니메이션 종료 후 비디오 요소 삭제
             setTimeout(() => {
                 titleVideo.remove();
             }, 1000); // 1초 후
-            // setTimeout(() => {
-            //     homeAvatar.classList.add('fadeIn');
-            // }, 1000);
+
             setTimeout(() => {
                 homeAvatar.classList.add('active');
             }, 2000);
         }
     });
 });
+
+    // // 비디오가 끝날 때 동작을 정의
+    // titleVideo.addEventListener('ended', function() {
+    //     if (window.innerWidth <= 768) {
+    //         homeSection.style.height = "0";
+    //         homeSection.style.overflow = 'hidden';
+    //     }
+    // });
