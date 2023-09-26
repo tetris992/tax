@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeContact = document.querySelector(".home_contact");
     const homeAvatar = document.querySelector(".home_avatar");
     const homeSection = document.getElementById("home"); 
-    // const headercolor = document.getElementById(".header");
+    const headercolor = document.getElementById(".header");
 
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             homeTitleStrong.classList.add('fadeIn');
             homeDescription.classList.add('fadeIn');
             homeContact.classList.add('fadeIn');
-            // headercolor.classList.add("header_color_changed")
+            headercolor.classList.add("header_color_changed")
 
             setTimeout(() => {
                 titleVideo.remove();
