@@ -401,8 +401,8 @@ button:focus {
 }
 
 .category-selected {
-    background-color: var(--color-accent);  /* 배경색을 accent 색상으로 설정합니다 */
-    color: var(--color-primary);            /* 텍스트 색상을 primary 색상으로 설정합니다 */
+    background-color: var(--color-accent);  
+    color: var(--color-primary);      
 }
 
 .category_count {
