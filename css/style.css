@@ -336,7 +336,6 @@ button:focus {
     background-color: var(--color-primary-variant);
         filter: brightness(125%);
     color: var(--color-text);
-    
 }
 
 .skills {
