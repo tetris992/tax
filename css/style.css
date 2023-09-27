@@ -238,7 +238,6 @@ button:focus {
     opacity: 0;
     transition: border 5s ease-out, opacity 22s ease-out;
     scale: 1;
-    transition-duration: 1.5;
 }
 
 .fadeIn {
