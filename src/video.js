@@ -45,7 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // 윈도우 리사이즈 때 영상을 실행
-window.addEventListener('resize', function() {
-    const titleVideo = document.getElementById("title_video");
-    titleVideo.play();
-});
+// window.addEventListener('resize', function() {
+//     if (this.window.innerWidth > 768) {
+//         titleVideo.add();
+//     const titleVideo = document.getElementById("title_video");
+//     titleVideo.play();
+//     }
+// }); //수정이 필요함 add할수 없음. 
