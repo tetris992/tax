@@ -366,17 +366,14 @@ button:focus {
 .skills_coding {
     grid-row: span 2;
     padding: 1rem;
-    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 .skills_tools {
     padding: 1rem;
-    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 .skills_etc {
     padding: 1rem;
-    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
 }
 
 /* bar */
@@ -793,21 +790,29 @@ button:focus {
     }
 
     .skills {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
         justify-content: center;
         align-items: center;
         max-width: auto;
-        margin: 2rem 0rem;
+        margin: 2rem 1rem;
     } 
     .skills_coding {
         padding: 0;
-    }
-    .skills_etc {
-        padding: 0;
+        grid-row: 1;
+        grid-column: 1 / -1;
     }
     .skills_tools {
         padding: 0;
+        grid-row: 2;
+        grid-column: 1;
     }
+    .skills_etc {
+        padding: 0;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
     .categories {
         flex-direction: column;
         
