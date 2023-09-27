@@ -26,6 +26,9 @@ html {
 }
 
 body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     font-family: 'Open Sans', sans-serif;
     margin: 0; 
 }
