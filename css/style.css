@@ -755,7 +755,7 @@ button:focus {
     }
     
     .home_title, .home_title--strong, .home_description, .home_contact {
-        display: ;
+        display: block;
         opacity: 0.5; /* 기본적으로 투명 */
         transition: opacity 7s; /* 2.5초 동안 서서히 보여지도록 설정 */
         z-index: 2;
@@ -802,7 +802,7 @@ button:focus {
 
     .skills {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: 1fr 1.5fr;
         justify-content: center;
         align-items: center;
         max-width: auto;
@@ -820,11 +820,12 @@ button:focus {
     }
     .skills_etc {
         padding: 0;
-        margin: 1rem;
+        margin: 2rem;
         grid-row: 2;
         grid-column: 2;
         background-image: url('/tax/images/taxcoin.jpg'); 
         background-size: cover;
+        border-radius: 5%;
         background-position: center center;
         background-repeat: no-repeat;
     }
