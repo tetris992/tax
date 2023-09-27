@@ -249,7 +249,6 @@ button:focus {
 
 
 .fadeIn {
-    display: inline-block;
     opacity: 1 !important;
 }
 
@@ -275,11 +274,11 @@ button:focus {
     padding: 0.5rem 1rem;
     margin: 1rem;
 }
-.home_contact:hover {
+/* .home_contact:hover {
     display: inline-block;
     background-color: var(--color-accent-variant);
     color: var(--color-text);
-}
+} */
 
 /* about */
 .majors {
@@ -784,11 +783,11 @@ button:focus {
         padding: 0.5rem 1rem;
         margin: 1.2rem;
     }
-    .home_contact:hover {
+    /* .home_contact:hover {
         display: inline-block;
         background-color: var(--color-accent-variant);
         color: var(--color-text);
-    }
+    } */
 
     .majors {
         flex-direction: column;
