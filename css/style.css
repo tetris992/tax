@@ -217,7 +217,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     left: 50%;             /* 화면의 중앙으로 이동 */
     top: 50%;              /* 화면의 중앙으로 이동 */
@@ -267,6 +267,7 @@ button:focus {
     margin: 1rem;
 }
 .home_contact:hover {
+    display: inline-block;
     background-color: var(--color-accent-variant);
     color: var(--color-text);
 }
