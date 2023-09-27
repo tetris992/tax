@@ -42,7 +42,6 @@ ul {
 }
 strong {
     color: var(--color-accent);
-    padding-bottom: 2rem;
 }
 
 ul {
@@ -250,13 +249,13 @@ button:focus {
 
 
 .fadeIn {
+    display: inline-block;
     opacity: 1 !important;
 }
 
 .home_title, .home_title--strong, .home_description, .home_contact {
     opacity: 0; /* 기본적으로 투명 */
     transition: opacity 7s; /* 2.5초 동안 서서히 보여지도록 설정 */
-    display: inline-block;
 }
 
 .home_title {
@@ -687,7 +686,7 @@ button:focus {
         position: relative;
         background-color: rgb(1, 1, 2);
         color: var(--color-text);
-        padding: 1rem 0%;
+        padding: 0rem 0%;
         margin: 0rem 0rem;
         /* padding-top: 7rem; */
         text-align: center;
@@ -807,8 +806,17 @@ button:focus {
         justify-content: center;
         align-items: center;
         max-width: auto;
+        margin: 2rem 0rem;
     } 
-    
+    .skills_coding {
+        padding: 0;
+    }
+    .skills_etc {
+        padding: 0;
+    }
+    .skills_tools {
+        padding: 0;
+    }
     .categories {
         flex-direction: column;
         
