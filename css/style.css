@@ -760,6 +760,7 @@ button:focus {
     }
     
     .home_title, .home_title--strong, .home_description, .home_contact {
+        display: none;
         display: block;
         opacity: 0.5; /* 기본적으로 투명 */
         transition: opacity 7s; /* 2.5초 동안 서서히 보여지도록 설정 */
