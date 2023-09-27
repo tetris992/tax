@@ -351,6 +351,7 @@ button:focus {
 .skills {
     display: grid;
     grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr 1.5fr;
     margin: 2rem 3rem;
     border-radius: 22px;
     overflow: hidden;
