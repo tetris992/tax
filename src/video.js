@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
+    if (window.innerWidth <= 768) {
+        homeAvatar.classList.add('active');
+    }
+
     // 비디오 재생 시간이 6.5초에 도달하면 멈춤
     titleVideo.addEventListener('timeupdate', function() {
         if (titleVideo.currentTime >= 6.5) {
@@ -37,4 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         }
     });
+
+});
+
+// 윈도우 리사이즈 때 영상을 실행
+window.addEventListener('resize', function() {
+    const titleVideo = document.getElementById("title_video");
+    titleVideo.play();
 });
