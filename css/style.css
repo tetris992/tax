@@ -374,6 +374,10 @@ button:focus {
 
 .skills_etc {
     padding: 1rem;
+    background-image: url('/tax/images/taxcoin.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* bar */
@@ -809,6 +813,7 @@ button:focus {
     }
     .skills_etc {
         padding: 0;
+        margin: 1rem;
         grid-row: 2;
         grid-column: 2;
         background-image: url('/tax/images/taxcoin.jpg'); 
@@ -817,7 +822,6 @@ button:focus {
         background-repeat: no-repeat;
     }
     
-
     .categories {
         flex-direction: column;
         
