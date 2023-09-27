@@ -234,9 +234,9 @@ button:focus {
     z-index: -2;  
 }
 .home_avatar.active {
-    border: 30px dotted var(--color-accent);
+    border: 40px dotted var(--color-accent);
     opacity: 0;
-    transition: border 5s ease-out, opacity 22s ease-out;
+    transition: border 3s ease-out, opacity 3s ease-out;
     scale: 1;
 }
 
