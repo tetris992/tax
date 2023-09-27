@@ -372,6 +372,12 @@ button:focus {
     padding: 1rem;
 }
 
+.skills_etc .skills_title,
+.skills_etc ul {
+    display: none;
+}
+
+
 .skills_etc {
     padding: 1rem;
     background-image: url('/tax/images/taxcoin2.jpg'); 
