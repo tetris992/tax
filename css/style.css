@@ -179,7 +179,7 @@ button:focus {
     position: relative;
     background-color: rgb(1, 1, 2);
     color: var(--color-text);
-    padding: 1rem 0%;
+    padding: 0.1rem 0%;
     margin: 0rem 0rem;
     overflow: hidden;
     text-align: center;
@@ -746,13 +746,26 @@ button:focus {
     
     
     .home_title {
+        margin-top: 130px;
         font-size: 1rem;
-        margin-bottom: 0.5rem;
-        
+        margin-bottom: 1rem;
+    }
+    .home_title--strong {
+        color: var(--color-accent);
     }
     .home_description {
-        font-size: 0.9rem;
-
+        font-size: 1rem;
+    }
+    .home_contact {
+        display: inline-block;
+        color: var(--color-accent-variant);
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+    }
+    .home_contact:hover {
+        display: inline-block;
+        background-color: var(--color-accent-variant);
+        color: var(--color-text);
     }
 
     .majors {
