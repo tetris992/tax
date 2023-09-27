@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
-    if (window.innerWidth <= 768) {
-        homeAvatar.classList.add('active');
-    }
+    // if (window.innerWidth <= 768) {
+    //     homeAvatar.classList.add('active');
+    // }
 
     // 비디오 재생 시간이 6.5초에 도달하면 멈춤
     titleVideo.addEventListener('timeupdate', function() {
