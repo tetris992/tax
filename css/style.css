@@ -734,7 +734,7 @@ button:focus {
         border-radius: 50%;
         border: 145px double slategrey;
         /* transition: 500ms cubic-bezier(0,0,.99,.99); */
-        z-index: -2;  
+        z-index: 1;  
     }
     .home_avatar.active {
         border: 1px dotted var(--color-accent);
