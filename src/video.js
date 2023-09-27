@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeTitleStrong = document.querySelector(".home_title--strong");
     const homeDescription = document.querySelector(".home_description");
     const homeContact = document.querySelector(".home_contact");
-    const homeAvatar = document.querySelector(".home_avatar");
+    // const homeAvatar = document.querySelector(".home_avatar");
 
     
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
@@ -23,15 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
             homeTitleStrong.classList.add('fadeIn');
             homeDescription.classList.add('fadeIn');
             homeContact.classList.add('fadeIn');
-            homeAvatar.classList.add('fadeIn');
+            // homeAvatar.classList.add('fadeIn');
 
             // 애니메이션 종료 후 비디오 요소 삭제
             setTimeout(() => {
                 titleVideo.remove();
             }, 1000); // 1초 후
-            setTimeout(() => {
-                homeAvatar.classList.add('fadeIn');
-            }, 1000);
+            // setTimeout(() => {
+            //     homeAvatar.classList.add('fadeIn');
+            // }, 1000);
             setTimeout(() => {
                 homeAvatar.classList.add('active');
             }, 2000);

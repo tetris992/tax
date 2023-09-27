@@ -698,8 +698,10 @@ button:focus {
         height: 100%; 
         overflow: hidden;
         margin-bottom: -1rem;
-        z-index: 1;  
+        z-index: -1;  
         border-radius: 5%;
+        overflow: hidden;
+
     }
     
     .home_container {
