@@ -509,7 +509,6 @@ button:focus {
 }
 .testimonials {
     margin:  3rem;
-    
 }
 
 .testimonial:nth-child(even) .testimonial_img {
@@ -821,9 +820,17 @@ button:focus {
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    .testimonials {
+        margin:  3rem, 0rem;
+    }
 
     .testimonial {
         flex-direction: column;
+    }
+
+    .testimonial_bubble {
+        padding: 1rem;
+        
     }
 
     .testimonial_img {
