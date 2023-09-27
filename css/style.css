@@ -234,9 +234,9 @@ button:focus {
     z-index: -2;  
 }
 .home_avatar.active {
-    border: 120px solid slategrey;
-    opacity: 0;
-    transition: border 7s ease-out, opacity 7s ease-out;
+    border: 140px double slategrey;
+    opacity: 0.4;
+    transition: border 7s ease, opacity 7s ease-out;
     scale: 1;
 }
 
@@ -682,7 +682,7 @@ button:focus {
         /* padding-top: 7rem; */
         text-align: center;
         height: auto;
-        transition: height 1s ease;
+        /* transition: height 1s ease; */
         overflow: hidden;
     }
 
@@ -712,11 +712,12 @@ button:focus {
         flex-direction: column;
         margin: 0rem;  
         height: 350px;           
-        z-index: -1;       
+        z-index: 1;       
         text-align: center; 
     }
 
     .home_avatar {
+        background-color: transparent;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -730,7 +731,7 @@ button:focus {
         height: 250px;
         object-fit: cover;
         opacity: 0.6;
-        transition: opacity 5s;
+        /* transition: opacity 5s; */
         scale: 0.99;
         border-radius: 50%;
         border: 145px double slategrey;
@@ -738,20 +739,29 @@ button:focus {
         z-index: 1;  
     }
     .home_avatar.active {
-        border: 1px dotted var(--color-accent);
-        opacity: 1;
-        transition: border 3s ease-out, opacity 10s ease-in;
+        /* display: none; */
+        border: 140px double rgb(112, 144, 126);
+        opacity: 0.4;
+        transition: border 7s ease, opacity 7s ease-out;
         scale: 1;
     }
     
+    .home_title, .home_title--strong, .home_description, .home_contact {
+        display: ;
+        opacity: 0.5; /* 기본적으로 투명 */
+        transition: opacity 7s; /* 2.5초 동안 서서히 보여지도록 설정 */
+        z-index: 2;
+    }
     
     .home_title {
-        margin-top: 130px;
-        font-size: 1rem;
+        margin-top: 100px;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
     .home_title--strong {
         color: var(--color-accent);
+        font-size: 1.1rem;
+
     }
     .home_description {
         font-size: 1rem;
@@ -760,7 +770,7 @@ button:focus {
         display: inline-block;
         color: var(--color-accent-variant);
         padding: 0.5rem 1rem;
-        margin: 1rem;
+        margin: 1.2rem;
     }
     .home_contact:hover {
         display: inline-block;
