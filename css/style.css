@@ -657,31 +657,23 @@ button:focus {
         gap: 1rem;
         text-align: center;
         margin: 1rem 4rem;
-
+    }
+    .header_menu_item {
+        color: var(--color-white);
+        background-color: transparent;
     }
     .header_menu.open {
         display: flex;
-        opacity: 1;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: transparent;
     }
-    
-    .header_menu_item {
-     color: var(--color-white);
-     background-color: rgba(0, 0, 0, 0.5);
-
-    }
-
     .header_nav {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        
+        background-color: transparent;
     }
-
     .header_menu_toggle {
         display: block;
         color: var(--color-text);
     }
-
     #home {
         position: relative;
         background-color: rgb(1, 1, 2);
