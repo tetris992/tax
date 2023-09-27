@@ -238,8 +238,8 @@ button:focus {
     flex-direction: column;
     align-items: center;
     border: 140px double slategrey;
-    opacity: 1;
-    transform: scale(1); /* scale 값 지정 */
+    opacity: 0.4;
+    /* transform: scale(1); */
     transition: border 7s ease, 
                 opacity 7s ease-out, 
                 transform 7s ease; /* transform에 대한 transition 지정 */
