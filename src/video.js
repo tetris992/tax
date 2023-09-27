@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeContact = document.querySelector(".home_contact");
     const homeAvatar = document.querySelector(".home_avatar");
 
-    
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
-    // if (window.innerWidth <= 768) {
-    //     homeAvatar.classList.add('active');
-    // }
+    // 모바일 환경에서는 비디오 제거
+    if (window.innerWidth <= 768) {
+        titleVideo.remove();
+        return; // 모바일 환경에서는 아래 로직을 진행하지 않음
+    }
 
-    // 비디오 재생 시간이 6.5초에 도달하면 멈춤
+    // 비디오 재생 시간이 6.5초에 도달하면 멈춤 및 애니메이션 처리
     titleVideo.addEventListener('timeupdate', function() {
         if (titleVideo.currentTime >= 6.5) {
             titleVideo.pause();
@@ -27,15 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
             homeTitleStrong.classList.add('fadeIn');
             homeDescription.classList.add('fadeIn');
             homeContact.classList.add('fadeIn');
-            // homeAvatar.classList.add('fadeIn');
-
+            
             // 애니메이션 종료 후 비디오 요소 삭제
             setTimeout(() => {
                 titleVideo.remove();
             }, 1000); // 1초 후
-            // setTimeout(() => {
-            //     homeAvatar.classList.add('fadeIn');
-            // }, 1000);
+
             setTimeout(() => {
                 homeAvatar.classList.add('active');
             }, 2000);
@@ -43,12 +41,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
-
-// 윈도우 리사이즈 때 영상을 실행
-// window.addEventListener('resize', function() {
-//     if (this.window.innerWidth > 768) {
-//         titleVideo.add();
-//     const titleVideo = document.getElementById("title_video");
-//     titleVideo.play();
-//     }
-// }); //수정이 필요함 add할수 없음. 
