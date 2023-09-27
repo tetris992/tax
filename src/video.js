@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeTitleStrong = document.querySelector(".home_title--strong");
     const homeDescription = document.querySelector(".home_description");
     const homeContact = document.querySelector(".home_contact");
-    // const homeAvatar = document.querySelector(".home_avatar");
+    const homeAvatar = document.querySelector(".home_avatar");
 
     
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
