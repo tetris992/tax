@@ -234,6 +234,9 @@ button:focus {
     z-index: -2;  
 }
 .home_avatar.active {
+
+    flex-direction: column;
+    align-items: center;
     border: 140px double slategrey;
     opacity: 1;
     transform: scale(1); /* scale 값 지정 */
