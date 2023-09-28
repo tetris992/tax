@@ -1551,7 +1551,7 @@ button:focus {
         border-radius: 20%;
         background-color: var(--color-white);
         filter: contrast(1.7); 
-        box-shadow: 0 20px 50px rgba(240, 46, 170, 0.7);
+        box-shadow: 0 20px 50px rgba(46, 51, 55, 0.7);
     }
     .header_logo_title a {
         display: inline-block;
@@ -1785,13 +1785,16 @@ button:focus {
     .testimonial:nth-child(even) .testimonial_img {
         order: 0;
     }
+
     .arrow_up {
         height: 2rem;
         width: 2rem;
         bottom: 3.5rem;
         right: 0.5rem;
         font-size: 1.5rem;
-   
+        border-radius: 100%;
+        text-align: center;
+        box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
     }
 
     .contact_links {
@@ -1804,6 +1807,6 @@ button:focus {
     }
 
     #contact {
-        font-size: 70%;
+        font-size: 60%;
     }
 }
