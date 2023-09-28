@@ -1,17 +1,13 @@
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
-    if (window.innerWidth <= 768){
+
+document.addEventListener('scroll', () => {
+    if(window.scrollY > headerHeight) {
         header.classList.add('header--dark');
     } else {
-        document.addEventListener('scroll', () => {
-            if(window.scrollY > headerHeight) {
-                header.classList.add('header--dark');
-            } else {
-                header.classList.remove('header--dark');
-            }
-        })        
+        header.classList.remove('header--dark');
     }
-
+})
 // home section을 아래로 스크롤시 투명하게 만들어줌. 
 const home = document.querySelector('.home_container');
 const homeHeight = home.offsetHeight;
@@ -31,28 +27,17 @@ document.addEventListener('scroll', () => {
 })
 
 // 토글버튼 
-// const sections = document.querySelectorAll('.section');
+
 const navbarMenu = document.querySelector('.header_menu');
 const navbarToggle = document.querySelector('.header_menu_toggle');
-
 navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
-    // toggleBlur();
 })
+
+// 토글매뉴 선택시 자동으로 닫아줌 
 navbarMenu.addEventListener('click', () => {
     navbarMenu.classList.remove('open');
-    // toggleBlur();
 })
-
-// function toggleBlur () {
-//     sections.forEach((section) =>{
-//         section.classList.toggle('blur')
-//     });
-// }
-
-
-
-
 
 
 // document.getElementById('categoryList').addEventListener('click', function(event) {
