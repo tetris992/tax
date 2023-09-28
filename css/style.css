@@ -1572,9 +1572,10 @@ button:focus {
         margin: 2rem 0;
         text-align: center;
         font-size: 40px; /* 아이콘 크기 설정 */
-        margin-left: 10px; /* 아이콘 간의 간격 조절 */
-        color: slategrey;
-        box-shadow: 0 20px 50px rgba(33, 56, 74, 0.7);
+        margin-left: 10px; 
+        color: rgb(207, 181, 113);
+        /* color: slategrey; */
+        /* box-shadow: 0 20px 50px rgba(33, 56, 74, 0.7); */
     }
     
 
@@ -1809,6 +1810,6 @@ button:focus {
     }
 
     #contact {
-        font-size: 60%;
-    }
+        font-size: 50%;
+    
 }
