@@ -633,15 +633,18 @@ button:focus {
 @media screen and (max-width: 768px) {
 
    /* 초기 스타일에서 블러 효과 없음 */
-    .blur {
+    #main-content {
         filter: blur(0);
-        transition: filter 0.3s ease; 
+        opacity: 1; /* 원래 투명도로 설정 */
+        transition: filter 0.3s ease, opacity 0.3s ease; 
     }
 
-    /* 메뉴가 열릴 때 분문 내용 블러 처리 */
-    .header_menu.open + main .blur {
-        filter: blur(5px); 
+    /* 메뉴가 열릴 때 메인 내용 블러 처리 및 투명도 낮춤 */
+    .header_menu.open + #main-content {
+        filter: blur(5px); /* 블러 효과 적용 (원하는 효과 값으로 변경 가능) */
+        opacity: 0.5; /* 투명도 낮춤 */
     }
+
 
     .section {
         padding: 3rem 2rem;
