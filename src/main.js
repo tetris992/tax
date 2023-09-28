@@ -1,7 +1,7 @@
 const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
 
-if(window.innerWidth <= 786 ) {
+if(window.innerWidth <= 768 ) {
     header.classList.add('header--dark');
     return;
 }
