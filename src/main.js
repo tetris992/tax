@@ -31,23 +31,24 @@ document.addEventListener('scroll', () => {
 })
 
 // 토글버튼 
-const sections = document.querySelectorAll('.section');
+// const sections = document.querySelectorAll('.section');
 const navbarMenu = document.querySelector('.header_menu');
 const navbarToggle = document.querySelector('.header_menu_toggle');
+
 navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
-    toggleBlur();
+    // toggleBlur();
 })
 navbarMenu.addEventListener('click', () => {
     navbarMenu.classList.remove('open');
-    toggleBlur();
+    // toggleBlur();
 })
 
-function toggleBlur () {
-    sections.forEach((section) =>{
-        section.classList.toggle('blur')
-    });
-}
+// function toggleBlur () {
+//     sections.forEach((section) =>{
+//         section.classList.toggle('blur')
+//     });
+// }
 
 
 
