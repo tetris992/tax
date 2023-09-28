@@ -633,15 +633,15 @@ button:focus {
 @media screen and (max-width: 768px) {
 
    /* 초기 스타일에서 블러 효과 없음 */
-.blur {
-    filter: blur(0);
-    transition: filter 0.3s ease; 
-}
+    .blur {
+        filter: blur(0);
+        transition: filter 0.3s ease; 
+    }
 
-/* 메뉴가 열릴 때 분문 내용 블러 처리 */
-.header_menu.open + main .blur {
-    filter: blur(5px); 
-}
+    /* 메뉴가 열릴 때 분문 내용 블러 처리 */
+    .header_menu.open + main .blur {
+        filter: blur(5px); 
+    }
 
     .section {
         padding: 3rem 2rem;
