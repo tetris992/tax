@@ -671,6 +671,7 @@ button:focus {
     }
 
     .header_logo_icons {
+        margin-top: 1rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -678,22 +679,15 @@ button:focus {
     }
     
     .header_logo_icons i {
-        margin: 2rem 0;
         text-align: center;
         font-size: 40px; 
         margin-left: 10px; 
-        /* color: rgb(207, 181, 113); */
         color: slategrey;
         /* box-shadow: 0 20px 50px rgba(33, 56, 74, 0.7); */
     }
 
-    .header_logo_icons:hover {
-        transform: rotate(-10deg) scale(1.2);
-        color: steelblue;
-    }
-
     .header_menu {
-        /* display: none; */
+        display: none;
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
@@ -714,7 +708,7 @@ button:focus {
     }
     .header_menu_toggle {
         display: block;
-        color: var(--color-white);
+        color: steelblue;
     }
     
     body > header > nav > ul > li:nth-child(1) > a {
