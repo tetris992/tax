@@ -714,7 +714,7 @@ button:focus {
     }
     .header_menu_toggle {
         display: block;
-        color: coral;
+        color: var(--color-white);
     }
 /*     
     body > header > nav > ul > li:nth-child(1) > a {
