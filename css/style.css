@@ -1608,6 +1608,12 @@ button:focus {
         display: block;
         color: coral;
     }
+    
+    body > header > nav > ul > li:nth-child(1) > a {
+        display: none;
+    }
+    
+
     #home {
         display: none;
         max-height: 100px;
