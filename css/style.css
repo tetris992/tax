@@ -687,6 +687,7 @@ button:focus {
         color: var(--color-text);
     }
     #home {
+        display: none;
         position: relative;
         background-color: rgb(1, 1, 2);
         color: var(--color-text);
