@@ -1583,7 +1583,7 @@ button:focus {
     }
 
     .header_menu {
-        display: none;
+        /* display: none; */
         flex-direction: column;
         gap: 0.1rem;
         text-align: center;
@@ -1598,11 +1598,9 @@ button:focus {
     }
     .header_menu.open {
         display: flex;
-        background-color: transparent;
     }
     .header_nav {
         width: 100%;
-        background-color: transparent;
     }
     .header_menu_toggle {
         display: block;
