@@ -716,10 +716,10 @@ button:focus {
         display: block;
         color: var(--color-white);
     }
-/*     
+    
     body > header > nav > ul > li:nth-child(1) > a {
         display: none;
-    } */
+    }
     
 
     #home {
