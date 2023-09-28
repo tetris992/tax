@@ -28,17 +28,27 @@ document.addEventListener('scroll', () => {
 })
 
 // 토글버튼 
-
+const sections = document.querySelectorAll('.section');
 const navbarMenu = document.querySelector('.header_menu');
 const navbarToggle = document.querySelector('.header_menu_toggle');
 navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
+    toggleBlur();
 })
-
-// 토글매뉴 선택시 자동으로 닫아줌 
 navbarMenu.addEventListener('click', () => {
     navbarMenu.classList.remove('open');
+    toggleBlur();
 })
+
+function toggleBlur () {
+    sections.forEach((section) =>{
+        section.classList.toggle('blur')
+    });
+}
+
+
+
+
 
 
 // document.getElementById('categoryList').addEventListener('click', function(event) {
