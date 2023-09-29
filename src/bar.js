@@ -15,9 +15,8 @@ const handleAnimation = () => {
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
 
-if (!resize && !scroll) {
-    setTimeout(handleAnimation, 4000);
-};
+setTimeout(handleAnimation, 4000);
+
 
 
 
