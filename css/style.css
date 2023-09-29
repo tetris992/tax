@@ -419,7 +419,7 @@ button:focus {
     background-color: var(--color-accent-variant);
     height: 3px;
     width: 0;
-    transition: width 2s; /* 애니메이션 효과 설정 */
+    transition: width 2s; 
 }
 
 /* Works */

@@ -5,7 +5,7 @@ document.querySelector('.skills').addEventListener('mouseover', function() {
     if (animated) return;
 
     // 모든 'bar' 요소를 순회
-    document.querySelectorAll('.bar').forEach(function(bar) {
+    document.querySelectorAll('.bar ul').forEach(function(bar) {
         // 각 바의 목표 너비를 가져옴
         let targetWidth = bar.querySelector('.bar_metadata span:last-child').textContent.trim();
         // 애니메이션 적용 (너비 변경)
