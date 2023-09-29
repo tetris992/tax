@@ -25,6 +25,18 @@ const handleAnimation = function() {
 
 setTimeout(handleAnimation, 5000);
 
+let count = 0;
+const maxRepeats = 5;
+
+const intervalId = setInterval(() => {
+    if (count < maxRepeats) {
+        handleAnimation();
+        count++;
+    } else {
+        clearInterval(intervalId); // 횟수 제한에 도달하면 interval을 중지합니다.
+    }
+}, 10000);
+
 
 
 // let isAnimated = false; // 플래그
