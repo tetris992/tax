@@ -658,6 +658,7 @@ button:focus {
         .header_menu_item {
             color: var(--color-text);
         }
+        opacity: 1;
         box-shadow: rgba(119, 5, 5, 0.2) 0px 60px 40px -7px;
     }
 
@@ -708,6 +709,11 @@ button:focus {
     #about > div > ul > li:nth-child(3) > a > i {
         color: coral;
     }
+    #about > div > ul > li:nth-child(3) > a > i:hover {
+        scale: 1.1;
+
+    }
+    
     
     .header_menu {
         display: none;
@@ -721,13 +727,20 @@ button:focus {
         background-color: transparent;
     }
     .header_menu_item:hover {
-        border-bottom: 1px solid var(--color-accent);
+        border: 1px solid var(--color-accent);
+        opacity: 1;
+        box-shadow: 0 20px 50px rgba(179, 195, 206, 0.7);
     }
     .header_menu.open {
         display: flex;
+        /* background-color: transparent; */
     }
     .header_nav {
         width: 100%;
+        border-radius: 5px;
+        background-color: var(--color-primary);
+        opacity: 0.5;
+        /* background-color: transparent; */
     }
     .header_menu_toggle {
         display: block;
