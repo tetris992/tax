@@ -226,8 +226,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 2rem;
     left: 50%;             /* 화면의 중앙으로 이동 */
     top: 50%;              /* 화면의 중앙으로 이동 */
     transform: translate(-50%, -50%);
@@ -419,6 +418,8 @@ button:focus {
 .bar_value {
     background-color: var(--color-accent-variant);
     height: 3px;
+    width: 0;
+    transition: width 2s; /* 애니메이션 효과 설정 */
 }
 
 /* Works */

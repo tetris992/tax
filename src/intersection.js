@@ -27,13 +27,11 @@ function observerCallback(entries) {
   entries.forEach((entry) => {
     const index = sectionIds.indexOf(`#${entry.target.id}`);
     visibleSections[index] = entry.isIntersecting && entry.intersectionRatio >= 0.95;
-    // selectLastOne =
-    //   index === sectionIds.length - 1 &&
-    //   entry.isIntersecting &&
-    //   entry.intersectionRatio >= 0.99;
   });
-  console.log(visibleSections);
-//   console.log('무조건 라스트 섹션!!', selectLastOne);
+  
+      if (sectionIds.indexOf('#skills') !== -1 && visibleSections[sectionIds.indexOf('#skills')]) {
+        animateSkillBars();
+    }
 
   const isLastSectionsVisible =
     visibleSections[sectionIds.length - 2] &&
@@ -54,6 +52,13 @@ function findFirstIntersecting(intersections) {
   return index >= 0 ? index : 0;
 }
 
+function animateSkillBars() {
+  const skillBars = document.querySelectorAll('.bar_value');
+  skillBars.forEach(bar => {
+      const widthValue = bar.parentElement.previousElementSibling.querySelector('span:nth-child(2)').textContent.trim();
+      bar.style.width = widthValue;
+  });
+}
 
 
 
