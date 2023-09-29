@@ -1,6 +1,6 @@
 let animated = false; // 애니메이션이 발생했는지를 확인하는 flag
 
-document.querySelector('.skills').addEventListener('mouseover', function() {
+document.querySelector('.skills_list').addEventListener('mouseover', function() {
     // 이미 애니메이션이 한 번 실행되었다면 더 이상 실행하지 않습니다.
     if (animated) return;
 
