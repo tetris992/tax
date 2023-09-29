@@ -1,22 +1,29 @@
-let isAnimated = false;
+let click = false;
+let resize = false;
+let scroll = false;
+
 
 // 로직을 별도의 함수로 분리
-const handleAnimation = () => {
-    if (isAnimated) return;
+window.addEventListener('click', () =>{
+    click = true;
+});
+window.addEventListener('resize', () =>{
+    resize = true;
+});
+window.addEventListener('scroll', () =>{
+    scroll = true;
+});
 
-    document.querySelectorAll('.bar').forEach(skillBar => {
-        let targetWidth = skillBar.querySelector('.bar_metadata span:last-child').textContent.trim();
-        skillBar.querySelector('.bar_value').style.width = targetWidth;
-    });
+const handleAnimation = function() {
+    if(!click && !resize && !scroll) 
+        document.querySelectorAll('.bar').forEach(skillBar => {
+            let targetWidth = skillBar.querySelector('.bar_metadata span:last-child').textContent.trim();
+            skillBar.querySelector('.bar_value').style.width = targetWidth;
+        });
+}
+    
 
-    isAnimated = true;
-};
-
-setTimeout(handleAnimation, 7000);
-
-window.addEventListener('resize', handleAnimation);
-window.addEventListener('scroll', handleAnimation);
-
+setTimeout(handleAnimation, 5000);
 
 
 
