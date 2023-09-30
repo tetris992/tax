@@ -714,6 +714,14 @@ button:focus {
         scale: 1.1;
 
     }
+    #about > div > ul > li:nth-child(2) > a > i:hover {
+        scale: 1.1;
+
+    }
+    #about > div > ul > li:nth-child(1) > a > i:hover {
+        scale: 1.1;
+
+    }
     
     
     .header_menu {
