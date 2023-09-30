@@ -226,33 +226,112 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
-    left: 50%;             /* 화면의 중앙으로 이동 */
-    top: 50%;              /* 화면의 중앙으로 이동 */
-    transform: translate(-62%, -52%);
+    justify-content: center; /* Add this line */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 250px;
     height: 250px;
     object-fit: cover;
-    opacity: 0.5;
+    /* opacity: 0.5;
     transition: opacity 5s;
     scale: 1;
     border-radius: 50%;
     border: 145px double greenyellow;
-    transition: 200ms cubic-bezier(0,0,.99,.99);
+    transition: 200ms cubic-bezier(0,0,.99,.99); */
     z-index: -2;  
 }
-.home_avatar.active {
+
+
+/* .home_avatar.active {
 
     flex-direction: column;
     align-items: center;
     border: 140px double slategrey;
     opacity: 0.4;
-    /* transform: scale(1); */
+
     transition: border 7s ease, 
                 opacity 7s ease-out, 
-                transform 7s ease; /* transform에 대한 transition 지정 */
+                transform 7s ease; 
+} */
+
+.circle-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+/*     0% {transform: translate(25px, 20px);} */
+    50% {transform: translate(-25px, -50px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@keyframes pulse {
+    0% {transform: scale(1); opacity: 1; stroke: red;}
+    50% {transform: scale(0.8); opacity: 1; stroke: darkred;}
+    100% {transform: scale(0.7); opacity: 1; stroke: darkred;}
+}
+
+.circle-container {
+    width: 310px;
+    height: 310px;
+}
+
+.circle {
+    fill: none;
+    stroke: goldenrod;
+    stroke-width: 30;
+    stroke-dasharray: 785; 
+    stroke-dashoffset: 785;
+    animation: draw 4s forwards, fade 5s forwards 6s;
+}
+
+.crosshair {
+    stroke: silver;
+    stroke-width: 3;
+    stroke-dasharray: 6;
+    opacity: 0;
+    animation: 
+        fade-in 4s forwards 3s, 
+        shake 3s ease-out 5s, 
+        fade 2s forwards 7s;
+}
+
+.small-circle {
+    fill: none;
+    stroke: red;
+    stroke-width: 0.5;
+    opacity: 0;
+    animation: 
+        fade-in 2s forwards 6s, 
+/*         pulse 2s forwards 23s,  */
+        fade 3s forwards 25s;
+}
 
 .fadeIn {
     opacity: 1 !important;
