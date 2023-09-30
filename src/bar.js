@@ -14,9 +14,10 @@ const handleAnimation = () => {
 
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
-document.getElementById('main').addEventListener('click', handleAnimation);
 
 setTimeout(handleAnimation, 4000);
+
+document.getElementById('main').addEventListener('click', handleAnimation);
 
 
 
