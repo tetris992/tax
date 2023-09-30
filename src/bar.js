@@ -14,11 +14,11 @@ const handleAnimation = () => {
 
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
+document.getElementById('main').addEventListener('click', handleAnimation);
 
 setTimeout(handleAnimation, 4000);
 
 
-document.getElementById('skills').addEventListener('click', handleAnimation);
 
 
 // document.getElementById('Skills').addEventListener('click', () =>{
