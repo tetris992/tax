@@ -25,11 +25,11 @@ const handleAnimation = () => {
     });
 };
 
-setTimeout(handleAnimation, 4000);
 
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
 
+setTimeout(handleAnimation, 4000);
 
 
 // let isAnimated = false;
