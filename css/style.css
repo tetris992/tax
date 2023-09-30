@@ -419,7 +419,7 @@ button:focus {
     background-color: var(--color-accent-variant);
     height: 3px;
     width: 0;
-    transition: width 10s cubic-bezier(0.25, 0.1, 0.25, 1)
+    transition: width 7s cubic-bezier(0.25, 0.1, 0.25, 1)
 }
 
 /* Works */
@@ -905,6 +905,10 @@ button:focus {
         background-repeat: no-repeat;
     }
     
+    .bar_value {
+        transition: width 10s cubic-bezier(0.25, 0.1, 0.25, 1)
+    }
+
     .categories {
         flex-direction: column;
         
