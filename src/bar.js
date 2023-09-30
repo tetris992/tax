@@ -12,6 +12,11 @@ const handleAnimation = () => {
     isAnimated = true;
 };
 
+document.getElementById('Skills').addEventListener('click', () =>{
+    alert('Skills section was clicked');
+    handleAnimation();
+})
+
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
 
