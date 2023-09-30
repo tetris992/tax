@@ -12,17 +12,15 @@ const handleAnimation = () => {
     isAnimated = true;
 };
 
-document.getElementById('Skills').addEventListener('click', () =>{
-    alert('Skills section was clicked');
-    handleAnimation();
-})
-
 window.addEventListener('resize', handleAnimation);
 window.addEventListener('scroll', handleAnimation);
 
 setTimeout(handleAnimation, 4000);
 
-
+document.getElementById('Skills').addEventListener('click', () =>{
+    isAnimated = false;
+    handleAnimation();
+})
 
 
 // let isAnimated = false; // 플래그
