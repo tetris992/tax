@@ -18,7 +18,7 @@ window.addEventListener('scroll', handleAnimation);
 setTimeout(handleAnimation, 4000);
 
 
-document.getElementById('skills'),addEventListener('click', handleAnimation);
+document.getElementById('skills').addEventListener('click', handleAnimation);
 
 
 // document.getElementById('Skills').addEventListener('click', () =>{
