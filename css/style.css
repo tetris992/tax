@@ -229,7 +229,7 @@ button:focus {
     margin: 2rem;
     left: 50%;             /* 화면의 중앙으로 이동 */
     top: 50%;              /* 화면의 중앙으로 이동 */
-    transform: translate(-50%, -50%);
+    transform: translate(-62%, -52%);
     width: 250px;
     height: 250px;
     object-fit: cover;
