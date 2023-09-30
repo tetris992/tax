@@ -9,7 +9,7 @@ const handleAnimation = () => {
         skillBar.querySelector('.bar_value').style.width = targetWidth;
     });
 
-    isAnimated = true;
+    // isAnimated = true;
 };
 
 window.addEventListener('resize', handleAnimation);
@@ -17,10 +17,14 @@ window.addEventListener('scroll', handleAnimation);
 
 setTimeout(handleAnimation, 4000);
 
-document.getElementById('Skills').addEventListener('click', () =>{
-    isAnimated = false;
-    handleAnimation();
-})
+
+document.getElementById('skills'),addEventListener('click', handleAnimation);
+
+
+// document.getElementById('Skills').addEventListener('click', () =>{
+//     isAnimated = false;
+//     handleAnimation();
+// })
 
 
 // let isAnimated = false; // 플래그
