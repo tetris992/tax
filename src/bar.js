@@ -5,7 +5,7 @@ const handleAnimation = () => {
     document.querySelectorAll('.bar').forEach(skillBar => {
         let targetWidthElement = skillBar.querySelector('.bar_metadata span:last-child');
         let targetWidth = targetWidthElement.textContent.trim();
-        let duration = parseFloat(targetWidth)/100*5;
+        let duration = parseFloat(targetWidth)/100*10;
         let currentWidth = 1;
         
         skillBar.querySelector('.bar_value').style.transition = `width ${duration}s cubic-bezier(0.25, 0.1, 0.25, 1)`;
