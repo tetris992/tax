@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 titleVideo.remove();
             }, 1000); // 1초 후
 
-            // setTimeout(() => {
-            //     homeAvatar.classList.add('active');
-            // }, 1000);
+            setTimeout(() => {
+                homeAvatar.classList.add('active');
+            }, 1000);
         }
         window.onload = function() {
             setTimeout(function() {

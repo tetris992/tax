@@ -244,16 +244,16 @@ button:focus {
 }
 
 
-/* .home_avatar.active {
+.home_avatar.active {
 
     flex-direction: column;
     align-items: center;
     border: 130px double slategray;
     opacity: 0.2;
-    transition: border 3s ease-in, 
-                opacity 2s ease-out, 
-                transform 3s ease-out; 
-} */
+    transition: border 4s ease-in, 
+                opacity 4s ease-out, 
+                transform 4s ease-out; 
+}
 
 .circle-container {
     width: 100%;
