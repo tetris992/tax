@@ -514,7 +514,7 @@ button:focus {
     grid-template-columns: repeat(4, 1fr); 
     gap: 1rem; 
     justify-content: center;
-    margin: 2.5rem;
+    margin: 2.5rem, 0.5rem;
 }
 
 
