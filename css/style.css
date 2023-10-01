@@ -216,12 +216,13 @@ button:focus {
     width: 100%;
     flex-direction: column;
     margin: 0rem;  
-    height: 400px;           
+    height: 350px;           
     z-index: 1;       
     text-align: center; 
 }
 
 .home_avatar {
+    fill: none;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -233,27 +234,26 @@ button:focus {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    /* opacity: 0.5;
-    transition: opacity 5s;
-    scale: 1;
+    /* opacity: 0.2; */
+    /* transition: opacity 1s; */
+    /* scale: 1; */
     border-radius: 50%;
-    border: 145px double greenyellow;
-    transition: 200ms cubic-bezier(0,0,.99,.99); */
-    z-index: -2;  
+    /* border: 145px double greenyellow; */
+    /* transition: 20ms cubic-bezier(0,0,.99,.99);  */
+    /* z-index: -2;   */
 }
 
 
-/* .home_avatar.active {
+.home_avatar.active {
 
     flex-direction: column;
     align-items: center;
-    border: 140px double slategrey;
+    border: 130px double slategrey;
     opacity: 0.4;
-
-    transition: border 7s ease, 
-                opacity 7s ease-out, 
-                transform 7s ease; 
-} */
+    transition: border 3s ease-in, 
+                opacity 2s ease-out, 
+                transform 3s ease-out; 
+}
 
 .circle-container {
     width: 100%;
@@ -272,9 +272,10 @@ button:focus {
         opacity: 1;
     }
     100% {
-        opacity: 0.1;
+        opacity: 0;
     }
 }
+
 
 @keyframes fade-in {
     0% {
@@ -286,8 +287,8 @@ button:focus {
 }
 
 @keyframes shake {
-/*     0% {transform: translate(25px, 20px);} */
-    50% {transform: translate(-25px, -50px);}
+    0% {transform: translate(-50px, -50px);}
+    50% {transform: translate(25px, 50px);}
     100% {transform: translate(0px, 0px);}
 }
 
@@ -306,14 +307,15 @@ button:focus {
     fill: none;
     stroke: goldenrod;
     stroke-width: 30;
+    opacity: 1;
     stroke-dasharray: 785; 
     stroke-dashoffset: 785;
-    animation: draw 4s forwards, fade 5s forwards 6s;
+    animation: draw 5s forwards, fade 5s forwards 6s;
 }
 
 .crosshair {
-    stroke: silver;
-    stroke-width: 3;
+    stroke: whitesmoke;
+    stroke-width: 4;
     stroke-dasharray: 6;
     opacity: 0;
     animation: 
@@ -329,8 +331,8 @@ button:focus {
     opacity: 0;
     animation: 
         fade-in 2s forwards 6s, 
-/*         pulse 2s forwards 23s,  */
-        fade 3s forwards 25s;
+        pulse 2s forwards 13s, 
+        fade 3s forwards 15s;
 }
 
 .fadeIn {
@@ -508,14 +510,17 @@ button:focus {
 }
 
 .categories {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem; 
     justify-content: center;
     margin: 2.5rem;
-    gap: 1rem;
 }
+
 
 .category {
     position: relative;
+    min-width: 175px;
     color: var(--color-text);
     font-size: 1.1rem;
     padding: 0.5rem 3rem;
@@ -997,8 +1002,8 @@ button:focus {
     } */
 
     .categories {
-        flex-direction: column;
-        
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .category {

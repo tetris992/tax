@@ -6,7 +6,7 @@ const handleAnimation = () => {
         let targetWidthElement = skillBar.querySelector('.bar_metadata span:last-child');
         let targetWidth = targetWidthElement.textContent.trim();
         let duration = parseFloat(targetWidth)/100*5;
-        let currentWidth = 0;
+        let currentWidth = 1;
         
         skillBar.querySelector('.bar_value').style.transition = `width ${duration}s cubic-bezier(0.25, 0.1, 0.25, 1)`;
         skillBar.querySelector('.bar_value').style.width = targetWidth;
@@ -14,7 +14,7 @@ const handleAnimation = () => {
         const incrementWidth = () => {
             currentWidth++;
             if(currentWidth <= parseFloat(targetWidth)){
-                targetWidthElement.textContent = currentWidth + '%';
+                targetWidthElement.textContent = Math.ceil((currentWidth)**2.1) + ' 건';
             }else{
                 clearInterval(intervalId); // Stop the interval when reaching the target width
             }
