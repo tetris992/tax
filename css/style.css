@@ -248,7 +248,7 @@ button:focus {
 
     flex-direction: column;
     align-items: center;
-    border: 130px double slategrey;
+    border: 130px double goldenrod;
     opacity: 0.4;
     transition: border 3s ease-in, 
                 opacity 2s ease-out, 
