@@ -14,7 +14,7 @@ const handleAnimation = () => {
         const incrementWidth = () => {
             currentWidth++;
             if(currentWidth <= parseFloat(targetWidth)){
-                targetWidthElement.textContent = Math.ceil((currentWidth)**1.5) + ' 건';
+                targetWidthElement.textContent = Math.ceil((currentWidth)**1.8) + ' 건';
             }else{
                 clearInterval(intervalId); // Stop the interval when reaching the target width
             }
