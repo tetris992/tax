@@ -245,11 +245,10 @@ button:focus {
 
 
 .home_avatar.active {
-
     flex-direction: column;
     align-items: center;
-    border: 130px double slategray;
-    opacity: 0.2;
+    border: 10px dotted slategray;
+    opacity: 0.4;
     transition: border 4s ease-in, 
                 opacity 4s ease-out, 
                 transform 4s ease-out; 
@@ -339,7 +338,7 @@ button:focus {
     opacity: 1 !important;
 }
 
-.home_title, .home_title--strong, .home_description, .home_contact {
+.home_title, .home_title--strong, .home_description{
     opacity: 0; /* 기본적으로 투명 */
     transition: opacity 7s ease-out; /* 2.5초 동안 서서히 보여지도록 설정 */
 }
@@ -359,9 +358,9 @@ button:focus {
     position: absolute;
     top: 80%;
     left: 48.4%;
-    scale: 1;
-    /* opacity: 1; */
-    /* transition: opacity 7s; */
+    opacity: 0; /* 기본적으로 투명 */
+    transition: opacity 7s ease-out; 
+    transition-delay: 5s;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -372,13 +371,10 @@ button:focus {
     box-shadow: rgba(217, 185, 27, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(204, 176, 176, 0.08) 0px 1px 0px inset;
     height: 50px;
     width: 50px;
+
     /* animation: pulse 3.5s infinit; */
     /* animation-delay: 8s; */
 } 
-.home_contact.animate {
-    animation: pulse 3.5s;
-}
-
 
 .home_contact:hover {
     background-color: var(--color-primary);
@@ -404,6 +400,7 @@ button:focus {
     white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 함 */
     text-align: center; /* 텍스트를 중앙정렬 */
     font-size: 12px; /* 폰트 사이즈 설정 */
+    color: red;
 }
 
 .home_contact:hover::before {

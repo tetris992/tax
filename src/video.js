@@ -39,10 +39,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 homeAvatar.classList.add('active');
             }, 1000);
         }
-        window.onload = function() {
-            setTimeout(function() {
-                document.querySelector('.home_contact').classList.add('animate');
-            }, 2000); // 8 seconds delay
-        };
     });
 });
