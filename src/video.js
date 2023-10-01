@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeContact = document.querySelector(".home_contact");
     const homeAvatar = document.querySelector(".home_avatar");
 
+
     titleVideo.volume = 0.5;  // 볼륨을 0.5로 설정
 
     // 모바일 환경에서는 비디오 제거
@@ -28,15 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
             homeTitleStrong.classList.add('fadeIn');
             homeDescription.classList.add('fadeIn');
             homeContact.classList.add('fadeIn');
-            
+
             // 애니메이션 종료 후 비디오 요소 삭제
             setTimeout(() => {
                 titleVideo.remove();
             }, 1000); // 1초 후
 
-            setTimeout(() => {
-                homeAvatar.classList.add('active');
-            }, 2000);
+            // setTimeout(() => {
+            //     homeAvatar.classList.add('active');
+            // }, 1000);
         }
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.home_contact').classList.add('animate');
+            }, 2000); // 8 seconds delay
+        };
     });
 });
