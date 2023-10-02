@@ -64,6 +64,43 @@ button:focus {
     outline: 1px transparent;
 }
 
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* 모달의 최대 너비 설정 */
+    max-height: 80%; /* 모달의 최대 높이 설정 */
+    background-color: #fff;
+}
+
+img#modalImage {
+    width: 100%; /* 이미지의 너비를 모달의 너비에 맞춤 */
+    height: auto; /* 이미지의 높이를 원본 비율에 맞게 조절 */
+}
+
+.close {
+    cursor: pointer;
+}
+
+
+
+
+
+
 /* Common */
 
 .section {
@@ -622,6 +659,9 @@ button:focus {
 }
 .project_img {
     width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    object-position: top;
 }
 .project_metadata {
     position: absolute;
@@ -638,12 +678,14 @@ button:focus {
     font-size: 0.8rem;
     transition: all 250ms ease-in-out;
     transform: translateY(-20px);
+    /* pointer-events: none; */
 }
 .project_metadata:hover {
     opacity: 0.8;
     transform: translateY(0px);
-
+   
 }
+
 .project_title_bar {
     margin: 0.5rem 0;
     width: 50px;
@@ -651,6 +693,8 @@ button:focus {
     background-color: greenyellow;
 }
  
+
+
 /* testimonial */
 
 #Testimonial {

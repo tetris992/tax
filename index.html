@@ -30,6 +30,8 @@
     <script type='module' src="/tax/src/projects.js" defer></script>
     <script type='module' src="/tax/src/intersection.js" defer></script>
     <script type='module' src="/tax/src/video.js" defer></script>
+    <script type='module' src="/tax/src/modal.js" defer></script>
+
     <script>
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -212,7 +214,7 @@
                     </li>
                     <li class='bar'>
                         <div class='bar_metadata'>
-                            <span>종합소득세</span><span>85%</span>
+                            <span>종합소득세 컨설팅</span><span>85%</span>
                         </div>
                         <div class='bar_bg'>
                             <div class='bar_value'></div>
@@ -220,21 +222,21 @@
                     </li>
                     <li class='bar'>
                         <div class='bar_metadata'>
-                            <span>일반과세자</span><span>73%</span></div>
+                            <span>일반과세 컨설팅</span><span>73%</span></div>
                             <div class='bar_bg'>
                                 <div class='bar_value'></div>
                             </div>
                     </li>
                     <li class='bar'>
                         <div class='bar_metadata'>
-                            <span>증여/상속</span><span>25%</span></div>
+                            <span>증여/상속 컨설팅</span><span>25%</span></div>
                             <div class='bar_bg'>
                                 <div class='bar_value'></div>
                             </div>
                     </li>
                     <li class='bar'>
                         <div class='bar_metadata'>
-                            <span>양도소득세</span><span>62%</span></div>
+                            <span>양도소득세 컨설팅</span><span>62%</span></div>
                             <div class='bar_bg'>
                                 <div class='bar_value'></div>
                             </div>
@@ -280,8 +282,8 @@
             </button>
         </li>
             <li>
-                <button class='category' data-filter='종합소득세'>
-                일반과세<span class='category_count'>3</span>
+                <button class='category' data-filter='원천세'>
+                원천세<span class='category_count'>3</span>
             </button>
         </li>
             <li>
@@ -305,86 +307,92 @@
             </button>
         </li>
             <li>
-                <button class='category' data-filter='일반과세'>
+                <button class='category' data-filter='원천세'>
                 급여/퇴직<span class='category_count'>1</span>
             </button>
         </li>
         </ul>
         <ul class='projects'>
-            <li class='project' data-type='법인/기업'>
-                <a href="#" target="_blank">
+            <li class='project' data-type='법인세'>
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/법인세.png" alt="project1" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #1</h3>
                     <div class='project_title_bar'></div>
                     <p>법인세 올인원 서비스</p>
                 </div>
-            </a>
+            <!-- </a> -->
         </li>
             <li class='project' data-type='부가가치세'>
-                <a href="#" target="_blank">
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/부가가치세.png" alt="project2" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #2</h3>
                     <div class='project_title_bar'></div>
                     <p>부가가치세 신고/납부</p>
                 </div>
-            </a>
+            <!-- </a> -->
         </li>
             <li class='project' data-type='양도소득세'>
-                <a href="#" target="_blank">
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/양도소득세.png" alt="project3" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #3</h3>
                     <div class='project_title_bar'></div>
                     <p>양도소득세 컨설팅</p>
                 </div>
-            </a></li>
-            <li class='project' data-type='일반과세'>
-                <a href="#" target="_blank">
+            <!-- </a> -->
+        </li>
+            <li class='project' data-type='종합부동산세'>
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/종합부동산세.png" alt="project4" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #4</h3>
                     <div class='project_title_bar'></div>
                     <p>종합부동산세 컨설팅</p>
                 </div>
-            </a></li>
-            <li class='project' data-type='일반과세'>
-                <a href="#" target="_blank">
-                <img src="images/taxes/일반과세.png" alt="project5" class='project_img'/>
+            <!-- </a> -->
+        </li>
+            <li class='project' data-type='원천세'>
+                <!-- <a href="#" target="_blank"> -->
+                <img src="images/taxes/원천세.png" alt="project5" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #5</h3>
                     <div class='project_title_bar'></div>
                     <p>일반과세 신고/납부</p>
                 </div>
-            </a></li>
-            <li class='project' data-type='법인/기업'>
-                <a href="#" target="_blank">
+            <!-- </a> -->
+        </li>
+            <li class='project' data-type='종합소득세'>
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/종합소득세.png" alt="project6" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #6</h3>
                     <div class='project_title_bar'></div>
                     <p>종합소득세 컨설팅</p>
                 </div>
-            </a></li>
-            <li class='project' data-type='상속/증여'>
-                <a href="#" target="_blank">
+            <!-- </a> -->
+        </li>
+            <li class='project' data-type='상속세'>
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/상속세.png" alt="project7" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #7</h3>
                     <div class='project_title_bar'></div>
                     <p>상속세/증여세 컨설팅</p>
                 </div>
-            </a></li>
+            <!-- </a> -->
+        </li>
             <li class='project' data-type='증권거래세'>
-                <a href="#" target="_blank">
+                <!-- <a href="#" target="_blank"> -->
                 <img src="images/taxes/증권거래세.png" alt="project8" class='project_img'/>
                 <div class='project_metadata'>
                     <h3 class='project_title'>Project #8</h3>
                     <div class='project_title_bar'></div>
                     <p>증권거래세 신고/납부</p>
                 </div>
-            </a></li>
+            <!-- </a> -->
+        </li>
         </ul>
         </div>
     </section>
@@ -485,6 +493,13 @@
         <p>Copyright&nbsp;©&nbsp;2023&nbsp;SAT&nbsp;세무회계법인.&nbsp; All rights reserved.</p>
         </div>
     </footer>
+    <!-- 모달 추가 -->
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <img src="" id="modalImage" alt="Large Preview"/>
+    </div>
+</div>
 
 </body>
 </html>
