@@ -82,8 +82,8 @@ button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%; /* 모달의 최대 너비 설정 */
-    max-height: 80%; /* 모달의 최대 높이 설정 */
+    max-width: 90%; /* 모달의 최대 너비 설정 */
+    max-height: 90%; /* 모달의 최대 높이 설정 */
     background-color: #fff;
 }
 
