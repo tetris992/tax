@@ -25,9 +25,10 @@ window.onclick = function(event) {
 
 
 
-// 모달이 작동되자 않는 비전 이유는  css 충돌로 아래 이미지에 클릭이 도달하지 못해서.. 이벤트가 감지되지 않기 때문 그런데 위에 코딩은 .project_metadata의 클릭 이벤트를 감지하여 동작을 수행하면 문제가 해결될 수 있습니다.
+// 모달이 작동되지 않는 비전 
+// 이유는  css 충돌로 아래 이미지에 클릭이 도달하지 못해서.. 이벤트가 감지되지 않기 때문 그런데 위에 코딩은 .project_metadata의 클릭 이벤트를 감지하여 동작을 수행하면 문제가 해결될 수 있음.
 
-// HTML 구조를 보면, .project_img가 .project_metadata의 형제 요소(sibling)임을 확인할 수 있습니다. 클릭 이벤트를 .project_metadata에 연결하고, 이벤트 핸들러 내에서 event.currentTarget의 형제 요소인 이미지의 src를 가져와서 모달에 사용
+// HTML 구조를 보면, .project_img가 .project_metadata의 형제 요소(sibling)임을 확인할 수 있음/ 클릭 이벤트를 .project_metadata에 연결하고, 이벤트 핸들러 내에서 event.currentTarget의 형제 요소인 이미지의 src를 가져와서 모달에 사용
 
 
 // document.addEventListener('DOMContentLoaded', function () {
