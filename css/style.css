@@ -245,15 +245,15 @@ button:focus {
 
 
 .home_avatar.active {
-    width: 500px;
-    height: 500px;
+    width: 1px;
+    height: 1px;
     flex-direction: column;
     align-items: center;
-    border: 150px solid slategray;
+    border: 260px solid slategray;
     opacity: 0.4;
     transition: border 4s ease-in, 
                 opacity 4s ease-out, 
-                transform 4s ease-out; 
+                transform 3s ease-out; 
 }
 
 .circle-container {
@@ -328,7 +328,7 @@ button:focus {
 
 .small-circle {
     fill: none;
-    stroke: red;
+    stroke: steelblue;
     stroke-width: 0.5;
     opacity: 0;
     animation: 
@@ -346,7 +346,7 @@ button:focus {
 }
 
 .home_title {
-    margin-top: 110px;
+    margin-top: 100px;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -401,7 +401,7 @@ button:focus {
     white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 함 */
     text-align: center; /* 텍스트를 중앙정렬 */
     font-size: 12px; /* 폰트 사이즈 설정 */
-    color: red;
+    color: skyblue;
 }
 
 .home_contact:hover::before {
