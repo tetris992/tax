@@ -297,7 +297,7 @@ img#modalImage {
     opacity: 0.4;
     transition: border 4s ease-in, 
                 opacity 4s ease-out, 
-                transform 3s ease-out; 
+                transform 1s ease-out; 
 }
 
 .circle-container {
