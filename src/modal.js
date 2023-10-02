@@ -6,8 +6,12 @@ document.querySelectorAll('.project_metadata').forEach(function(metaData) {
         // imgSrc를 모달의 이미지 src에 할당합니다.
         document.getElementById('modalImage').src = imgSrc;
         
-        // 모달을 표시합니다.
-        document.getElementById('myModal').style.display = 'block';
+        if(window.innerWidth <= 768) {
+            return;
+        } else {
+
+            document.getElementById('myModal').style.display = 'block';
+        }
     });
 });
 
