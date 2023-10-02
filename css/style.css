@@ -369,8 +369,8 @@ button:focus {
     background-color:transparent;
     font-size: 40px; 
     color: red;
-    border: 0.0001px solid rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    border: 0.0001px solid transparent;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     height: 50px;
     width: 50px;
     z-index: 100;
