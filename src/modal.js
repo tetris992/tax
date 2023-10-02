@@ -17,8 +17,9 @@ document.getElementById('closeModal').addEventListener('click', function() {
 });
 
 window.onclick = function(event) {
-    var modal = document.getElementById('myModal');
-    if (event.target == modal) {
+    let modal = document.getElementById('myModal');
+    let modal2 = document.getElementById('modalImage');
+    if (event.target === modal || event.target === modal2) {
         modal.style.display = 'none';
     }
 }
@@ -43,10 +44,11 @@ window.onclick = function(event) {
 //         document.getElementById('myModal').style.display = 'none';
 //     });
     
-//     window.onclick = function(event) {
-//         var modal = document.getElementById('myModal');
-//         if (event.target == modal) {
-//             modal.style.display = 'none';
-//         }
+// window.onclick = function(event) {
+//     let modal = document.getElementById('myModal');
+//     let modal2 = document.getElementById('modalImage');
+//     if (event.target === modal || event.target === modal2) {
+//         modal.style.display = 'none';
 //     }
+// }
 // });
