@@ -327,13 +327,13 @@ button:focus {
 }
 
 .small-circle {
-    /* fill: none; */
-    stroke: black;
+    fill: none;
+    stroke: slategrey;
     stroke-width: 0.5;
     opacity: 0;
     animation: 
         fade-in 2s forwards 6s, 
-        fade 3s forwards 15s;
+        fade 4s forwards 5s;
 }
 
 .fadeIn {
