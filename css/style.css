@@ -386,7 +386,7 @@ button:focus {
 }
 
 .home_contact:hover::after {
-    content: attr(data-tooltip); /* data-tooltip 속성의 값을 내용으로 사용 */
+    content: attr(data-tooltip); 
     position: absolute;
     bottom: 65%;
     left: 50%;
@@ -394,12 +394,12 @@ button:focus {
     /* transform: translateY(20%); */
     background-color: transparent;
     color: #fff;
-    padding: 8px 15px; /* 상하좌우 패딩값 조절 */
+    padding: 8px 15px; 
     border-radius: 4px;
     margin-bottom: 10px;
-    white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 함 */
-    text-align: center; /* 텍스트를 중앙정렬 */
-    font-size: 12px; /* 폰트 사이즈 설정 */
+    white-space: nowrap; 
+    text-align: center; 
+    font-size: 12px; 
     color: skyblue;
 }
 
@@ -411,7 +411,7 @@ button:focus {
     transform: translateX(-50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #333; /* 툴팁 색상과 동일하게 설정 */
+    border-top: 5px solid #333; 
 }
 
 /* about */
