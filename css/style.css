@@ -249,7 +249,7 @@ button:focus {
     height: 1px;
     flex-direction: column;
     align-items: center;
-    border: 300px solid slategray;
+    border: 330px solid slategray;
     opacity: 0.4;
     transition: border 4s ease-in, 
                 opacity 4s ease-out, 
@@ -328,7 +328,7 @@ button:focus {
 
 .small-circle {
     /* fill: none; */
-    stroke: red;
+    stroke: black;
     stroke-width: 0.5;
     opacity: 0;
     animation: 
