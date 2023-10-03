@@ -295,9 +295,9 @@ img#modalImage {
     align-items: center;
     border: 330px solid slategray;
     opacity: 0.4;
-    transition: border 4s ease-in, 
-                opacity 4s ease-out, 
-                transform 1s ease-out; 
+    transition: border 2s ease-in, 
+                opacity 2s ease-out, 
+                transform 2s ease-out; 
 }
 
 .circle-container {
@@ -652,6 +652,7 @@ img#modalImage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    height: 600px;
     gap: 1rem;
     transition:  all 100ms ease-out;
 }
@@ -666,7 +667,7 @@ img#modalImage {
 }
 .project_img {
     width: 100%;
-    height: 200px; 
+    height: 100%; 
     object-fit: cover;
     object-position: top;
 }
