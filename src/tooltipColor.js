@@ -1,6 +1,6 @@
 document.addEventListener('scroll', function () {
     const scrollY = window.scrollY;
-    const colorChangePosition = 650; // 색상이 변경되는 y 좌표
+    const colorChangePosition = 550; // 색상이 변경되는 y 좌표
     
     const tooltips = document.querySelectorAll('.tooltiptext');
 
