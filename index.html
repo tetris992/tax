@@ -32,6 +32,8 @@
     <script type='module' src="/tax/src/video.js" defer></script>
     <script type='module' src="/tax/src/modal.js" defer></script>
     <script type='module' src="/tax/src/sidebar.js" defer></script>
+    <script type='module' src="/tax/tax/src/tooltipColor.js" defer></script>
+
 
 
     <script>
@@ -503,11 +505,18 @@
     </div>
 </div>
 <!-- 사이드 바 -->
-<div id='mySidenav' class='sidenav'>
-    <a href="https://www.google.co.kr/maps/dir//%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%B0%BD%EC%9B%90%EC%8B%9C+%EC%84%B1%EC%82%B0%EA%B5%AC+%EB%A7%88%EB%94%94%EB%AF%B8%EC%84%9C%EB%A1%9C+68+KR+%EB%AC%B8%EC%9D%B4%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84+%EC%82%AC%EB%AC%B4%EC%86%8C/data=!4m8!4m7!1m0!1m5!1m1!1s0x3568cce40e852467:0x98fae2554c515004!2m2!1d128.6800424!2d35.2198202?entry=ttu">오시는길</a>
-    <a href="https://blog.naver.com/taxssam">블로그</a>
-    <a href="https://www.youtube.com/channel/UCM8uai7l_O2Iv2PJ19YCAQg">유튜브</a>
-    <a href="https://pf.kakao.com/_XVmWxb">카카오</a>
+<div id='sidebarBox' class='outside'>
+    <div id='mySidenav' class='sidenav'>
+        <a href='#home' style='color: slategray'><i class="fa-solid fa-house"></i></a>
+        <a href="https://www.google.co.kr/maps/dir//%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%B0%BD%EC%9B%90%EC%8B%9C+%EC%84%B1%EC%82%B0%EA%B5%AC+%EB%A7%88%EB%94%94%EB%AF%B8%EC%84%9C%EB%A1%9C+68+KR+%EB%AC%B8%EC%9D%B4%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84+%EC%82%AC%EB%AC%B4%EC%86%8C/data=!4m8!4m7!1m0!1m5!1m1!1s0x3568cce40e852467:0x98fae2554c515004!2m2!1d128.6800424!2d35.2198202?entry=ttu" class='tooltip'><i class="fa-solid fa-street-view" style="color: steelblue;"></i><span class="tooltiptext">찾아오시는 길</span>
+        </a>
+        <a href="https://blog.naver.com/taxssam" class='tooltip'><i class="fa-brands fa-blogger" style="color: #1ed24b;"></i><span class="tooltiptext">블로그</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UCM8uai7l_O2Iv2PJ19YCAQg" class='tooltip'><i class="fa-brands fa-youtube" style="color: #f91515;"></i><span class="tooltiptext">유튜브</span>
+        </a>
+        <a href="https://pf.kakao.com/_XVmWxb" class='tooltip'><i class="fa-solid fa-comment-dots" style="color: #ebd01e;"></i><span class="tooltiptext">카카오</span>
+        </a>
+    </div>
 </div>
 
 </body>
