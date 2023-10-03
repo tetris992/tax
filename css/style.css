@@ -140,7 +140,8 @@ img#modalImage {
 }
 
 .sidenav a:hover {
-    color: coral;
+    background-color: lightslategray;
+    color: #fd6413;
 }
 
 
