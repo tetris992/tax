@@ -652,7 +652,8 @@ img#modalImage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 600px;
+    min-height: 500px;
+    min-width: auto;
     gap: 1rem;
     transition:  all 100ms ease-out;
 }
@@ -1099,7 +1100,7 @@ img#modalImage {
         grid-template-columns: repeat(2, 1fr);
     }
     .project_img {
-        height: 200px;
+        height: 300px;
     }
     .testimonials {
         margin:  3rem, 0rem;
