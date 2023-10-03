@@ -22,7 +22,7 @@
         src="https://kit.fontawesome.com/a9de290b31.js" crossorigin="anonymous">
     </script>
     <!-- CSS -->
-    <link rel="stylesheet" href="/tax/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Javascript -->
     <script type='module' src="/tax/src/main.js" defer></script>
@@ -31,6 +31,8 @@
     <script type='module' src="/tax/src/intersection.js" defer></script>
     <script type='module' src="/tax/src/video.js" defer></script>
     <script type='module' src="/tax/src/modal.js" defer></script>
+    <script type='module' src="/tax/src/sidebar.js" defer></script>
+
 
     <script>
         document.addEventListener('contextmenu', function(e) {
@@ -148,7 +150,7 @@
                 <i class="fa-solid fa-file-invoice-dollar major_icon"></i>
                 <p class='description'><strong>Financial value</strong>
                 </p>
-                <p>고객의 지속 가능한 사업적 성공은 꾸준한 재무적 관리에 달려 있습니다. 우리의 재무적 목표는 고객이 자금 흐름을 장악한 리더가 되고, 장기적으로 성장하는 새로운 방법을 찾도록 보장하는 것입니다. SAT(주) 세무회계법인은 FY22년 450억원의 재무관리 성장을 창출했습니다.
+                <p>고객의 지속 가능한 사업적 성공은 꾸준한 재무적 관리에 달려 있습니다. 우리의 컨설팅 목표는 고객이 자금 흐름을 장악한 리더가 되고, 장기적으로 성장하는 새로운 방법을 찾도록 보장하는 것입니다. SAT(주) 세무회계법인은 FY22년 450억원의 재무관리 성장을 창출했습니다.
                 </p>
             </li>
         </ul>
@@ -493,12 +495,19 @@
         <p>Copyright&nbsp;©&nbsp;2023&nbsp;SAT&nbsp;세무회계법인.&nbsp; All rights reserved.</p>
         </div>
     </footer>
-    <!-- 모달 추가 -->
+    <!-- 모달 -->
 <div class="modal" id="myModal">
     <div class="modal-content">
         <span class="close" id="closeModal">&times;</span>
         <img src="" id="modalImage" alt="Large Preview"/>
     </div>
+</div>
+<!-- 사이드 바 -->
+<div id='mySidenav' class='sidenav'>
+    <a href="">오시는길</a>
+    <a href="">블로그</a>
+    <a href="">홈텍스</a>
+    <a href="">카카오</a>
 </div>
 
 </body>
