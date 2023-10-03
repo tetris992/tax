@@ -142,8 +142,9 @@ img#modalImage {
 
 .sidenav a:hover {
     width: 100%;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     color: #fd6413;
+    border-bottom: 1px solid var(--color-accent) ;
 }
 
 
