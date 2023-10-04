@@ -26,9 +26,13 @@
 
     <!-- Javascript -->
     <script type='module' src="/tax/src/main.js" defer></script>
+    <script type='module' src="/tax/src/homeresize.js" defer></script>
+
     <script type='module' src="/tax/src/bar.js" defer></script>
     <script type='module' src="/tax/src/projects.js" defer></script>
     <script type='module' src="/tax/src/intersection.js" defer></script>
+    <!-- <script type='module' src="/src/newScript.js" defer></script> -->
+
     <script type='module' src="/tax/src/video.js" defer></script>
     <script type='module' src="/tax/src/modal.js" defer></script>
     <script type='module' src="/tax/src/sidebar.js" defer></script>
@@ -84,16 +88,16 @@
                     <div class="circle-container">
                         <svg viewBox="0 0 310 310">
                             <circle class="circle" cx="155" cy="155" r="125"/>
-                            <line class="crosshair" x1="155" y1="10" x2="155" y2="300"/>
-                            <line class="crosshair" x1="10" y1="155" x2="300" y2="155"/>
+                            <line class="crosshair1" x1="155" y1="10" x2="155" y2="300"/>
+                            <line class="crosshair2" x1="10" y1="155" x2="300" y2="155"/>
                             <circle class="small-circle" cx="155" cy="155" r="15"/>
                         </svg>
                     </div>
                 </div>
-                <h2 class='home_title'> 사업자를 위한 든든한 파트너!<h2> 
-                    <strong class='home_title--strong'>문이 세무회계에서 상담 받아보세요</strong> 
-                <h4><p class='home_description'>개별 사정에 맞게 속 시원하고 신속하게 처리해드리겠습니다.</p></h4>
-                <a class='home_contact' href="https://www.google.co.kr/maps/dir//%EA%B2%BD%EC%83%81%EB%82%A8%EB%8F%84+%EC%B0%BD%EC%9B%90%EC%8B%9C+%EC%84%B1%EC%82%B0%EA%B5%AC+%EB%A7%88%EB%94%94%EB%AF%B8%EC%84%9C%EB%A1%9C+68+KR+%EB%AC%B8%EC%9D%B4%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84+%EC%82%AC%EB%AC%B4%EC%86%8C/data=!4m8!4m7!1m0!1m5!1m1!1s0x3568cce40e852467:0x98fae2554c515004!2m2!1d128.6800424!2d35.2198202?entry=ttu" data-tooltip="찾아오시는 길"><i class="fa-solid fa-location-dot"></i></a>
+                <h2 class='home_title'> 사업자를 위한 든든한 파트너!</h2> 
+                    <strong class='home_title--strong'  style='font-size: 2rem;'>문이 세무회계에서 상담 받아보세요</strong> 
+                <p class='home_description'>개별 사정에 맞게 속 시원하고 신속하게 처리해드리겠습니다.</p>
+                <a class='home_contact' href="#" data-tooltip="찾아오시는 길"></a>
             </div>
         </section>
         
@@ -129,8 +133,8 @@
                  
                 </ul>
             </div>
-        <h2 class='title'>About SAT</h2>
-        <p class='description'>
+        <h2 id='aboutText' class='title fade'>About SAT</h2>
+        <p id='aboutDescription' class='description fade'>
             How can value realized today reshape tomorrow ? <br>
         </p>
         <ul class='majors'>

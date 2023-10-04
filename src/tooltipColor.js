@@ -23,7 +23,7 @@
 
 document.addEventListener('scroll', function () {
     const scrollY = window.scrollY;
-    const colorChangePosition = 550; // 첫 번째 색상이 변경되는 y 좌표
+    const colorChangePosition = 400; // 첫 번째 색상이 변경되는 y 좌표
 
     const tooltips = document.querySelectorAll('.tooltiptext');
 
