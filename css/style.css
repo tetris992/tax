@@ -1122,12 +1122,12 @@ img#modalImage {
     .home_description {
         font-size: 1rem;
     }
-    .home_contact {
+    /* .home_contact {
         display: inline-block;
         color: var(--color-accent-variant);
         padding: 0.5rem 1rem;
         margin: 1.2rem;
-    }
+    } */
     /* .home_contact:hover {
         display: inline-block;
         background-color: var(--color-accent-variant);
