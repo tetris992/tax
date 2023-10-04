@@ -1172,14 +1172,14 @@ img#modalImage {
     }
 
     .category {
-        width: 100%;
+        width: 90%;
     }
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
     .project_img {
-        height: 300px;
+        height: 250px;
     }
     .testimonials {
         margin:  3rem, 0rem;
@@ -1225,5 +1225,16 @@ img#modalImage {
         font-size: 50%;
     }
 
+    .sidenav {
+        display: none;
+        text-align: center;
+        align-self: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        scale: 0.7;
+        height: 85px;
+        margin: 0px;
+    }
 
 }

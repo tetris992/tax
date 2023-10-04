@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let sidenav = document.getElementById('mySidenav');
     document.getElementById('mySidenav').style.opacity = '1';
-    sidenav.style.marginTop = '356px';
+    sidenav.style.marginTop = '400px';
 
 })
 
@@ -10,7 +10,7 @@ document.addEventListener('scroll', function(){
     if(window.scrollY > 0) {
         sidenav.style.opacity = '1';
         // sidenav.style.padding = '0';
-    sidenav.style.marginTop = '356px';
+    sidenav.style.marginTop = '400px';
 
     } 
 });

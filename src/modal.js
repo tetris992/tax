@@ -6,7 +6,7 @@ document.querySelectorAll('.project_metadata').forEach(function(metaData) {
         // imgSrc를 모달의 이미지 src에 할당합니다.
         document.getElementById('modalImage').src = imgSrc;
         
-        if(window.innerWidth <= 768) {
+        if(window.innerWidth <= 300) {
             return;
         } else {
 
