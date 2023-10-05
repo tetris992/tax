@@ -4,15 +4,15 @@ const headerHeight = header.offsetHeight;
 if(window.innerWidth <= 768) {
     header.classList.add('header--dark');
 }
-// document.addEventListener('scroll', () => {
-//     if(window.scrollY > headerHeight) {
-//         header.classList.add('header--dark');
-//     } else {
-//         header.classList.remove('header--dark');
-//         // header.style.backgroundColor= 'black';
-//         header.style.color = 'transparent';
-//     }
-// })
+document.addEventListener('scroll', () => {
+    if(window.scrollY > headerHeight) {
+        header.classList.add('header--dark');
+    } else {
+        header.classList.remove('header--dark');
+        // header.style.backgroundColor= 'black';
+        // header.style.color = 'transparent';
+    }
+})
 // home section을 아래로 스크롤시 투명하게 만들어줌. 
 const home = document.querySelector('.home_container');
 const homeHeight = home.offsetHeight;
