@@ -4,13 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const crossfade2 = document.querySelector('.crosshair2');
     const circle = document.querySelector('.circle');
     const abouttext = document.getElementById('aboutText');
-    const aboutdescription = document.getElementById('aboutDescription')
+    const aboutdescription = document.getElementById('aboutDescription');
+    const titleVideo = document.getElementById("title_video");
 
-    // let isShrinked = false;
 
     setTimeout(() => {
         homeHeight.classList.add('shrink'); 
-    }, 15000); 
+    }, 7000); 
+
+    setTimeout(() => {
+        titleVideo.classList.add('shrink')
+    }, 7000); 
+    
     
     setTimeout(() => {
         crossfade.style.stroke = 'transparent';
@@ -25,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // 원래 텍스트를 서서히 사라지게 합니다.
         aboutText.style.opacity = '0';
         aboutDescription.style.opacity = '0';
-    }, 17000);
+        titleVideo.style.opacity = '0.4';
+    }, 12000);
 
     setTimeout(()=>{
         const aboutText = document.getElementById('aboutText');
@@ -37,6 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // 새로운 텍스트를 서서히 나타나게 합니다.
         aboutText.style.opacity = '1';
         aboutDescription.style.opacity = '1';
-    }, 19000)
+    }, 15000)
 });
 

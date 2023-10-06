@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeTitleStrong = document.querySelector(".home_title--strong");
     const homeDescription = document.querySelector(".home_description");
     // const homeContact = document.querySelector(".home_contact");
-    // const homeAvatar = document.querySelector(".home_avatar");
+    const homeAvatar = document.querySelector(".home_avatar");
 
 
     titleVideo.volume = 0.5;  
@@ -15,24 +15,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     titleVideo.addEventListener('timeupdate', function() {
-        if (titleVideo.currentTime >= 6.5) {
+        if (titleVideo.currentTime >= 9) {
             titleVideo.pause();
             
-            titleVideo.style.transition = 'opacity 2s ease-out';
+            titleVideo.style.transition = 'opacity 3s ease-out';
             titleVideo.style.opacity = 0;
 
-            homeTitle.classList.add('fadeIn');
-            homeTitleStrong.classList.add('fadeIn');
-            homeDescription.classList.add('fadeIn');
-            // homeContact.classList.add('fadeIn');
+            // homeTitle.classList.add('fadeIn');
+            // homeTitleStrong.classList.add('fadeIn');
+            // homeDescription.classList.add('fadeIn');
+            // // homeContact.classList.add('fadeIn');
 
-            setTimeout(() => {
-                titleVideo.remove();
-            }, 1000); 
+            // setTimeout(() => {
+            //     titleVideo.remove();
+            // }, 10000); 
 
-            setTimeout(() => {
-                homeAvatar.classList.add('active');
-            }, 1000);
+            // setTimeout(() => {
+            //     homeAvatar.classList.add('active');
+            // }, 1000);
         }
     });
 });

@@ -1,25 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let sidenav = document.getElementById('mySidenav');
-    document.getElementById('mySidenav').style.opacity = '1';
-    sidenav.style.marginTop = '350px';
+    const sidenav = document.getElementById('mySidenav');
+    const aboutTopmargin = document.getElementById('about');
 
-})
+    sidenav.style.opacity = '0.7';
+    sidenav.style.marginTop = '100px';
+    
+    document.addEventListener('scroll', function(){
+        if(window.scrollY > 0) {
+            sidenav.style.opacity = '1';
+            sidenav.style.marginTop = '250px';
+        } 
+    });
 
-document.addEventListener('scroll', function(){
-    let sidenav = document.getElementById('mySidenav');
-    if(window.scrollY > 0) {
-        sidenav.style.opacity = '1';
-        // sidenav.style.padding = '0';
-    sidenav.style.marginTop = '350px';
 
-    } 
-});
-
-document.addEventListener('click', function(){
-    let sidenav = document.getElementById('mySidenav');
-    sidenav.style.opacity = '0';
-    // sidenav.style.padding = '0';
-    sidenav.style.marginTop = '0';
+    document.addEventListener('click', function(){
+        sidenav.style.opacity = '0';
+        sidenav.style.marginTop = '0';
+    });
 });
 
 
