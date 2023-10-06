@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const skillBars = document.querySelectorAll('.bar');
     skillBars.forEach(skillBar => {
         let targetWidthText = skillBar.querySelector('.bar_metadata span:last-child').textContent;
-        let targetWidth = parseInt(targetWidthText.replace('건', ''), 10);
+        let targetWidth = parseInt(targetWidthText.replace('%', ''), 10);
         let currentWidth = 0;
         let duration = 7;
 
