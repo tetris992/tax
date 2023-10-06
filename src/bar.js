@@ -1,28 +1,23 @@
-
-let isAnimated = false;
 const handleAnimation = () => {
-    if (isAnimated) return;
-
-    document.querySelectorAll('.bar').forEach(skillBar => {
-        let targetWidthElement = skillBar.querySelector('.bar_metadata span:last-child');
+    document.querySelectorAll('.bar').forEach(performanceBar => {
+        let targetWidthElement = performanceBar.querySelector('.bar_metadata span:last-child');
         let targetWidth = targetWidthElement.textContent.trim();
         let duration = parseFloat(targetWidth)/100*15;
         let currentWidth = 1;
         
-        skillBar.querySelector('.bar_value').style.transition = `width ${duration}s cubic-bezier(0.25, 0.1, 0.25, 1)`;
-        skillBar.querySelector('.bar_value').style.width = targetWidth;
+        performanceBar.querySelector('.bar_value').style.transition = `width ${duration}s cubic-bezier(0.25, 0.1, 0.25, 1)`;
+        performanceBar.querySelector('.bar_value').style.width = targetWidth;
 
         const incrementWidth = () => {
             currentWidth++;
             if(currentWidth <= parseFloat(targetWidth)){
-                targetWidthElement.textContent = Math.ceil((currentWidth)**2.1) + ' 건';
+                targetWidthElement.textContent = Math.ceil((currentWidth)**1.8) + ' 건';
             }else{
                 clearInterval(intervalId);
             }
         };
-        const intervalId = setInterval(incrementWidth, (duration * 1000) / parseFloat(targetWidth)); 
+        const intervalId = setInterval(incrementWidth, (duration * 1000) / parseFloat(targetWidth));
         
-        isAnimated = true;
     });
 };
 
