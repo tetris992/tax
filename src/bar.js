@@ -47,7 +47,7 @@
 
 
 
-
+// 좀 더 확장된 로직이 필요함. 
 
 let isAnimated = false;
 
