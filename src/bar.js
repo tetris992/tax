@@ -8,7 +8,7 @@ document.querySelectorAll('.bar').forEach(skillBar => {
     skillBar.querySelector('.bar_value').style.width = targetWidth;
 
     // '%'에서 '건'으로 변환: 예를 들어, '55%'를 '550 건'으로 변환
-    let targetCount = parseInt(targetWidth) * 10; // 예를 들어, 소수점이 없는 정수로 변환 후 10을 곱함
+    let targetCount = parseInt(targetWidth/10)**2; // 예를 들어, 소수점이 없는 정수로 변환 후 10을 곱함
     let currentCount = 0;
     
     const incrementCount = () => {
