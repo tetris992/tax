@@ -2,7 +2,7 @@
 document.querySelectorAll('.bar').forEach(skillBar => {
     let targetWidthElement = skillBar.querySelector('.bar_metadata span:last-child');
     let targetWidth = targetWidthElement.textContent.trim();
-    let duration = 5; // 바가 목표치에 도달하는데 걸리는 시간을 5초로 설정
+    let duration = 15; // 바가 목표치에 도달하는데 걸리는 시간을 5초로 설정
     
     skillBar.querySelector('.bar_value').style.transition = `width ${duration}s ease-in-out`;
     skillBar.querySelector('.bar_value').style.width = targetWidth;
