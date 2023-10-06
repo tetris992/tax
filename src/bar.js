@@ -17,10 +17,10 @@ const handleAnimation = () => {
             if(currentWidth <= parseFloat(targetWidth)){
                 targetWidthElement.textContent = Math.ceil((currentWidth)**2.1) + ' 건';
             }else{
-                clearInterval(intervalId); // Stop the interval when reaching the target width
+                clearInterval(intervalId);
             }
         };
-        const intervalId = setInterval(incrementWidth, (duration * 1000) / parseFloat(targetWidth)); // Distributing the duration time for each percentage point
+        const intervalId = setInterval(incrementWidth, (duration * 1000) / parseFloat(targetWidth)); 
         
         isAnimated = true;
     });
