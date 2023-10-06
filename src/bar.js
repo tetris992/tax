@@ -2,14 +2,14 @@
 document.querySelectorAll('.bar').forEach(skillBar => {
     let targetWidthElement = skillBar.querySelector('.bar_metadata span:last-child');
     let targetWidth = targetWidthElement.textContent.trim();
-    let duration = 15; // 바가 목표치에 도달하는데 걸리는 시간을 5초로 설정
+    let duration = 15; //
     
     skillBar.querySelector('.bar_value').style.transition = `width ${duration}s ease-in-out`;
     skillBar.querySelector('.bar_value').style.width = targetWidth;
 
     // '%'에서 '건'으로 변환: 예를 들어, '55%'를 '550 건'으로 변환
-    let targetCount = parseInt(targetWidth/10)**2; // 예를 들어, 소수점이 없는 정수로 변환 후 10을 곱함
-    let currentCount = 0;
+    let targetCount = parseInt((targetWidth)*10**1.32); // 예를 들어, 소수점이 없는 정수로 변환 후 10을 곱함
+    let currentCount = 1;
     
     const incrementCount = () => {
         currentCount++;
@@ -20,7 +20,7 @@ document.querySelectorAll('.bar').forEach(skillBar => {
         }
     };
     
-    const intervalId = setInterval(incrementCount, (duration * 2000) / targetCount); // 동안 각 건수를 등록
+    const intervalId = setInterval(incrementCount, (duration * 500) / targetCount); // 동안 각 건수를 등록
 });
 
 
