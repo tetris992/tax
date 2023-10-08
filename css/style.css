@@ -32,6 +32,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0; 
 }
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+}
 
 h1,
 h2,
@@ -63,7 +70,7 @@ button {
 button:focus {
     outline: 1px transparent;
 }
-
+/* card rotation */
 
 /* modal */
 
@@ -164,15 +171,16 @@ img#modalImage {
 .tooltip .tooltiptext {
     /* visibility: hidden; */
     display: flex;
-    text-align: start;
+    justify-content: flex-end;
+    /* text-align: right; */
     width: 120px;
     font-size: 20px;
-    margin-left: 1rem;
+    margin-right: 2rem;
     background-color: transparent;
     color: rgb(3, 31, 42);
     border-radius: 6px;
     position: absolute;
-    z-index: 1000; /* 툴팁이 다른 요소들 위에 나타나도록 z-index를 높게 설정하세요. */
+    z-index: 200; /* 툴팁이 다른 요소들 위에 나타나도록 z-index를 높게 설정하세요. */
     right: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -872,23 +880,30 @@ img#modalImage {
     box-shadow: 4.0px 8.0px 8.0px rgba(0,0,0,0.38);
 }
 
+
 /* footer */
+
+
 #contact {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    /* position: sticky;
-    bottom: 0px;
-    height: 0; */
+    /* opacity: 0.1; */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('/images/footerbackimage.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: rgba(245, 245, 245, 0.627);
+    opacity: 1;
+
     overflow: hidden;
     padding: 1rem;
     width: auto;
     align-items: center;
     justify-content: center;
-    opacity: 0.9;
     transition: height 1000ms;
 }
 
