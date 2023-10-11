@@ -795,24 +795,23 @@ img#modalImage {
     position: relative;
 }
 
-.custom-shape-divider-bottom-1697041450 {
+.custom-shape-divider-top-1697044761 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1697041450 svg {
+.custom-shape-divider-top-1697044761 svg {
     position: relative;
     display: block;
-    width: calc(150% + 1.3px);
-    height: 70px;
+    width: calc(163% + 1.3px);
+    height: 51px;
 }
 
-.custom-shape-divider-bottom-1697041450 .shape-fill {
+.custom-shape-divider-top-1697044761 .shape-fill {
     fill: #FFFFFF;
 }
 /* projects */
