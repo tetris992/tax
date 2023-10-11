@@ -790,6 +790,31 @@ img#modalImage {
     top: 0;
 }
 
+/* work */
+#work {
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1697041450 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697041450 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 70px;
+}
+
+.custom-shape-divider-bottom-1697041450 .shape-fill {
+    fill: #FFFFFF;
+}
 /* projects */
 
 .projects {
