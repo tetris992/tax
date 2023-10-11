@@ -581,6 +581,26 @@ img#modalImage {
 } */
 
 /* about */
+.custom-shape-divider-top-1697039762 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697039762 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+}
+
+.custom-shape-divider-top-1697039762 .shape-fill {
+    fill: #FFFFFF;
+}
+
 .majors {
     display: flex;
     justify-content: space-between;
