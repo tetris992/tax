@@ -932,6 +932,7 @@ img#modalImage {
 /* footer */
 
 #contact {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -954,6 +955,26 @@ img#modalImage {
     transition: height 1000ms;
 }
 
+.custom-shape-divider-top-1697041771 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1697041771 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 70px;
+}
+
+.custom-shape-divider-top-1697041771 .shape-fill {
+    fill: #FFFFFF;
+}
 /* #contact:hover {
     opacity: 0.2;
     background-color: rgb(7, 58, 7);
