@@ -581,6 +581,14 @@ img#modalImage {
 } */
 
 /* about */
+
+.majors {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
 .custom-shape-divider-top-1697039762 {
     position: absolute;
     top: 0;
@@ -601,12 +609,6 @@ img#modalImage {
     fill: #FFFFFF;
 }
 
-.majors {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 2.5rem 0;
-}
 
 .major {
     flex: 1;
@@ -902,27 +904,9 @@ img#modalImage {
 
 
 /* footer */
-.custom-shape-divider-top-1697039967 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1697039967 svg {
-    position: relative;
-    display: block;
-    width: calc(135% + 1.3px);
-    height: 72px;
-}
-
-.custom-shape-divider-top-1697039967 .shape-fill {
-    fill: #FFFFFF;
-}
 
 #contact {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -945,6 +929,25 @@ img#modalImage {
     transition: height 1000ms;
 }
 
+.custom-shape-divider-top-1697039967 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1697039967 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 72px;
+}
+
+.custom-shape-divider-top-1697039967 .shape-fill {
+    fill: #FFFFFF;
+}
 /* #contact:hover {
     opacity: 0.2;
     background-color: rgb(7, 58, 7);
