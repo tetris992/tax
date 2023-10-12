@@ -954,25 +954,6 @@ img#modalImage {
     transition: height 1000ms;
 }
 
-.custom-shape-divider-top-1697044971 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1697044971 svg {
-    position: relative;
-    display: block;
-    width: calc(173% + 1.3px);
-    height: 51px;
-}
-
-.custom-shape-divider-top-1697044971 .shape-fill {
-    fill: #FFFFFF;
-}
 /* #contact:hover {
     opacity: 0.2;
     background-color: rgb(7, 58, 7);
